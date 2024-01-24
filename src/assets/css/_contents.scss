@@ -1,1 +1,33 @@
 /* contents */
+
+
+.cform_toplogo{
+    img{}
+}
+.cform_contents{}
+.cform_element_group{}
+.cform_element{}
+input.cform_input{}
+.cform_props_group{
+    .props_item{}
+}
+
+.cform_submit_group{}
+.cform_submit_block{
+    &:last-of-type{}
+}
+
+.cform_else_menu_group{
+
+}
+
+.cform_else_menu_list{
+    > li {
+        &:last-of-type{
+            &:after{}
+        }
+        &:after{}
+    }
+}
+
+.cform_else_menu{}

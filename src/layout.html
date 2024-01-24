@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-    @@include('./include/_head.html',{
-        "title" : "레이아웃 01 | 메인비즈"
-    })
+    @@include('./include/_head.html')
 <body class="front_body">
     <div class="page_wrap">
-        @@include('./include/_skip.html')
-        @@include('./include/_header.html')
-        <section class="middle_wrap" id="content">
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util_01.html')
+                @@include('./include/_gnb.html')
+            </div>
+        </header>
+        <section class="middle_wrap">
             내용이 들어갑니다.
         </section>
-        @@include('./include/_footer.html')
     </div>
 </body>
 </html>
