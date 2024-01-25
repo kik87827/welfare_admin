@@ -30,6 +30,21 @@ html{
 
 .btn_login_box{}
 
+.nav_item_list{
+    > li{
+
+    }
+}
+.nav_item{
+    &:hover,
+    &.active{
+        &:after{}
+        .nav_item_text{}
+    }
+    &:after{}
+}
+.nav_item_text{}
+
 .middle_wrap{
     &.main_wrap{}
 }
