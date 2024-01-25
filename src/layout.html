@@ -5,8 +5,10 @@
     <div class="page_wrap">
         <header class="header_wrap">
             <div class="hgroup_wrap">
-                @@include('./include/_util_01.html')
-                @@include('./include/_gnb.html')
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
             </div>
         </header>
         <section class="middle_wrap">

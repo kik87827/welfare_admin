@@ -31,3 +31,80 @@ input.cform_input{}
 }
 
 .cform_else_menu{}
+
+.main_visual_wrap{}
+.main_visual_row{
+    &:before{}
+}
+.main_copy_group{}
+.main_copy_primary{}
+.main_copy_sub{}
+.main_menu_box{}
+.main_menu_list{
+    > li{}
+}
+.main_menu_item{
+    .ico{
+        img{}
+    }
+}
+.main_menu_text_group{}
+.main_menu_text_primary{
+   .emp{} 
+   .unit{} 
+}
+.main_menu_text_sub{}
+
+.main_control_group{}
+.btn_control_item{
+    .ico{
+        &.ico_reload{}
+    }
+}
+.btn_control_item_inner{}
+.btn_control_text{}
+
+.main_contents_wrap{
+    &:before{}
+}
+
+.board_data_render{}
+.board_data_title_row{}
+.board_data_title{}
+.board_data_contents{}
+.board_data_list{
+    > li{}
+}
+.board_data_box{
+    &:hover{}
+}
+.board_data_title_wrap{}
+.board_data_flow_row{
+    .flag_box{}
+}
+.board_data_main_title{}
+.board_data_summary_wrap{}
+.board_data_summary{}
+.board_data_else_obj{}
+.board_data_else_key{}
+.board_data_else_value{}
+
+.btn_more{
+    &:hover{}
+    &:after{}
+}
+.btn_more_text{}
+
+.quick_panel_wrap{}
+.quick_menu_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+
+.quick_menu_item{
+    .ico{
+        img{}
+    }
+}
+.quick_menu_text{}

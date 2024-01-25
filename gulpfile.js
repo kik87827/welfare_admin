@@ -47,7 +47,7 @@ gulp.task('fileinclude',function(){
 	.pipe(fileinclude({
 		prefix : '@@',
 		basepath : '@file'
-	}).on('error', function(){ console.log('path error')}))
+	}).on('error', function(data){ console.log(data)}))
 	// .pipe(removeEmptyLines())
 	.pipe(htmlbeautify({indent_with_tabs : true}))
 	.pipe(gulp.dest('./dist/'))
