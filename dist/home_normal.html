@@ -8,7 +8,9 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/moment.min.js"></script>
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/daterangepicker.js"></script>
 	<script src="./assets/js/dynamicListener.min.js"></script>
 	<script src="./assets/js/jquery-ui.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
@@ -37,14 +39,14 @@
 				</div>
 				<nav class="hgroup_main_block">
 					<ul class="nav_item_list">
-						<li><a href="#" class="nav_item active"><span class="nav_item_text">신고 관리</span></a></li>
-						<li><a href="#" class="nav_item"><span class="nav_item_text">APP회원 관리</span></a></li>
-						<li><a href="#" class="nav_item"><span class="nav_item_text">콘텐츠 관리</span></a></li>
-						<li><a href="#" class="nav_item"><span class="nav_item_text">통계 관리</span></a></li>
+						<li><a href="#" class="nav_item" id="nav_report"><span class="nav_item_text">신고 관리</span></a></li>
+						<li><a href="#" class="nav_item" id="nav_app_member"><span class="nav_item_text">APP회원 관리</span></a></li>
+						<li><a href="#" class="nav_item" id="nav_contents"><span class="nav_item_text">콘텐츠 관리</span></a></li>
+						<li><a href="#" class="nav_item" id="nav_stats"><span class="nav_item_text">통계 관리</span></a></li>
 
-						<li><a href="#" class="nav_item"><span class="nav_item_text">연계 관리</span></a></li>
+						<li><a href="#" class="nav_item" id="nav_link"><span class="nav_item_text">연계 관리</span></a></li>
 
-						<li><a href="#" class="nav_item"><span class="nav_item_text">회원 관리</span></a></li>
+						<li><a href="#" class="nav_item" id="nav_member"><span class="nav_item_text">회원 관리</span></a></li>
 
 					</ul>
 				</nav>
@@ -92,30 +94,6 @@
 											<span class="unit">건</span>
 										</div>
 										<div class="main_menu_text_sub">누적 완료</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="main_menu_item">
-									<i class="ico"><img src="./assets/images/ico_mv04.png" alt=""></i>
-									<div class="main_menu_text_group">
-										<div class="main_menu_text_primary">
-											<strong class="emp">14</strong>
-											<span class="unit">건</span>
-										</div>
-										<div class="main_menu_text_sub">회원 가입 승인 요청</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="main_menu_item">
-									<i class="ico"><img src="./assets/images/ico_mv05.png" alt=""></i>
-									<div class="main_menu_text_group">
-										<div class="main_menu_text_primary">
-											<strong class="emp">5</strong>
-											<span class="unit">건</span>
-										</div>
-										<div class="main_menu_text_sub">기간연장 요청</div>
 									</div>
 								</a>
 							</li>

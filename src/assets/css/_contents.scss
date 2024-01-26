@@ -108,3 +108,44 @@ input.cform_input{}
     }
 }
 .quick_menu_text{}
+
+
+.sub_cont_block_wrap{}
+.sub_cont_block{
+    &:last-of-type{}
+}
+.sub_cont_key_row{}
+.sub_cont_key{}
+.sub_cont_value_row{}
+
+.box_brick_wrap{}
+.box_brick{}
+.box_brick_key_row{
+    .box_marker_flag{}
+
+}
+.box_brick_key{
+}
+.box_brick_value_row{}
+
+.box_brick_data{
+
+}
+
+
+.box_brick_data_group{}
+.data_liquid_cols{}
+.data_short_cols{}
+
+.file_item_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.file_item{}
+.btn_control_card{
+    .ico{
+        &.ico_down{}
+    }
+}
+.btn_control_card_text{}

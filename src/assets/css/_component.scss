@@ -34,8 +34,14 @@
 }
 /* // 공통 popup */
 
+
+
+.props_item_group{}
 .props_item{}
 input.props_form{
+    &[type="radio"]{
+        & + .props_label{}
+    }
     &:checked{
         & + .props_label{}
     }
@@ -52,3 +58,24 @@ input.props_form{
 
 
 .flag_box{}
+.box_marker_flag{
+    .ico{
+        &.ico_emer{}
+    }
+}
+.box_marker_flag_text{}
+
+.number{
+
+    *{}
+}
+
+
+.btn_box_group{}
+.btn_box{
+    &.size_submit{
+        .btn_box_text{}
+    }
+    &.primary{}
+}
+.btn_box_text{}
