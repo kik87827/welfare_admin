@@ -3,7 +3,14 @@
     @@include('./include/_head.html')
 <body class="front_body">
     <div class="page_wrap">
-        @@include('./include/_header.html')
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
+            </div>
+        </header>
         <section class="middle_wrap sub_wrap">
             <div class="sub_title_wrap">
                 <h2 class="sub_title">신고 상세</h2>

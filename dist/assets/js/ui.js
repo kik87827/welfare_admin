@@ -58,6 +58,13 @@ function layoutFunc() {
 
 }
 
+/* rock */
+function rockMenu(item) {
+  const itemMenu = document.querySelector(item);
+  if (!!itemMenu) {
+    itemMenu.classList.add("active");
+  }
+}
 
 /* popup */
 class DesignPopup {

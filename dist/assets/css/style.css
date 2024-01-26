@@ -390,85 +390,6 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 5px transparent;
 }
 
-/* paging */
-.paging_wrap {
-  margin-top: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.paging_control,
-.paging_number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #fff;
-  font-size: 12px;
-}
-
-.paging_number_group {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
-}
-
-.paging_number {
-  font-family: "Rubik Regular", "Pretendard", dotum;
-  color: #999;
-  font-size: 16px;
-}
-.paging_number.active, .paging_number:focus, .paging_number:hover {
-  background: #0077C0;
-  color: #fff;
-  font-family: "Rubik Bold";
-  border-color: #0077C0;
-}
-.paging_number.active {
-  cursor: default;
-}
-
-.paging_control {
-  flex: 0 0 40px;
-}
-.paging_control:before {
-  display: block;
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 0 -15px;
-}
-.paging_control.first:before {
-  background-image: url("../images/ico_paging_first.png");
-}
-.paging_control.prev:before {
-  background-image: url("../images/ico_paging_prev.png");
-}
-.paging_control.next:before {
-  background-image: url("../images/ico_paging_next.png");
-}
-.paging_control.last:before {
-  background-image: url("../images/ico_paging_end.png");
-}
-.paging_control.disabled {
-  cursor: default;
-}
-.paging_control.disabled:before {
-  background-position: 0 0 !important;
-}
-.paging_control:focus:before, .paging_control:hover:before {
-  background-position: 0 100%;
-}
-
-/* // paging */
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2816,90 +2737,6 @@ button.swiper-pagination-bullet {
     left: 30px !important;
   }
 }
-@media (max-width: 1023px) {
-  .daterangepicker {
-    width: auto;
-    border-radius: 7px;
-    margin-top: 0 !important;
-    left: 20px !important;
-    width: calc(100% - 40px) !important;
-    position: fixed !important;
-    top: 20px !important;
-    height: calc(100% - 40px) !important;
-  }
-  .daterangepicker .drp-calendar.left {
-    padding: 15px;
-  }
-  .daterangepicker.show-calendar .ranges {
-    margin: 0;
-  }
-  .daterangepicker .drp-buttons .btn {
-    font-size: 14px;
-  }
-  .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
-    font-size: 14px;
-  }
-  .daterangepicker {
-    margin-top: -1px;
-    width: calc(100% - 40px) !important;
-    left: 20px !important;
-    box-sizing: border-box;
-  }
-  .daterange-ment {
-    font-size: 16px;
-    padding: 20px 30px;
-  }
-  .daterangepicker.pos2 {
-    width: calc(100% - 40px) !important;
-    left: 20px !important;
-  }
-  .daterange_inline_wrap .daterangepicker {
-    width: 100% !important;
-    left: 0 !important;
-  }
-  .daterange_inline_wrap .daterangepicker .drp-calendar {
-    padding: 10px 0 0 0 !important;
-  }
-  .daterangepicker-inner {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .daterange-ment-low {
-    flex: 0;
-  }
-  .drp-buttons {
-    flex: 0;
-  }
-  .drp-calendar-wrap {
-    flex: 1;
-    min-height: 0;
-    position: relative;
-    overflow-y: auto;
-  }
-}
-@media (max-width: 374px) {
-  .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
-    padding: 5px;
-  }
-}
-@media (max-width: 359px) {
-  .daterangepicker {
-    width: auto;
-  }
-  .daterangepicker .drp-calendar.left {
-    padding: 5px;
-  }
-  .daterangepicker .drp-buttons .btn {
-    font-size: 15px;
-  }
-  .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
-    font-size: 13px;
-  }
-  .daterangepicker {
-    width: 280px;
-  }
-}
 /* component */
 /* popup */
 /* 공통 popup */
@@ -3020,5 +2857,84 @@ button.swiper-pagination-bullet {
 }
 
 /* // 공통 popup */
+/* paging */
+.paging_wrap {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.paging_control,
+.paging_number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 12px;
+}
+
+.paging_number_group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.paging_number {
+  font-family: "Rubik Regular", "Pretendard", dotum;
+  color: #999;
+  font-size: 16px;
+}
+.paging_number.active, .paging_number:focus, .paging_number:hover {
+  background: #0077C0;
+  color: #fff;
+  font-family: "Rubik Bold";
+  border-color: #0077C0;
+}
+.paging_number.active {
+  cursor: default;
+}
+
+.paging_control {
+  flex: 0 0 40px;
+}
+.paging_control:before {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 -15px;
+}
+.paging_control.first:before {
+  background-image: url("../images/ico_paging_first.png");
+}
+.paging_control.prev:before {
+  background-image: url("../images/ico_paging_prev.png");
+}
+.paging_control.next:before {
+  background-image: url("../images/ico_paging_next.png");
+}
+.paging_control.last:before {
+  background-image: url("../images/ico_paging_end.png");
+}
+.paging_control.disabled {
+  cursor: default;
+}
+.paging_control.disabled:before {
+  background-position: 0 0 !important;
+}
+.paging_control:focus:before, .paging_control:hover:before {
+  background-position: 0 100%;
+}
+
+/* // paging */
 /* contents */
 /*# sourceMappingURL=style.css.map */

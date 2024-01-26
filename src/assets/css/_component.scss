@@ -79,3 +79,40 @@ input.props_form{
     &.primary{}
 }
 .btn_box_text{}
+
+
+
+
+
+/* paging */
+.paging_wrap {margin-top:64px; display:flex;justify-content: center; align-items: center;gap:8px;}
+.paging_control,
+.paging_number{display: inline-flex;  align-items:center; justify-content:center; width: 40px;height: 40px;border:1px solid #ddd;border-radius:8px;background: #fff;font-size:12px;}
+.paging_number_group{display:flex;align-items: center;gap:8px;justify-content: center}
+
+.paging_number{@include rubik; color:#999; font-size:16px;
+    &.active,
+    &:focus,&:hover{background:$primary; color:#fff;font-family: 'Rubik Bold';border-color:$primary}
+    &.active{cursor: default;}
+}
+
+.paging_control{
+    flex:0 0 40px;
+    &:before{display:block;content:'';width:15px;height:15px; background-repeat:no-repeat; background-size:100% auto; background-position:0 -15px;}
+    &.first:before{background-image:url("../images/ico_paging_first.png");}
+    &.prev:before{background-image:url("../images/ico_paging_prev.png");}
+    &.next:before{background-image:url("../images/ico_paging_next.png");}
+    &.last:before{background-image:url("../images/ico_paging_end.png");}
+
+    &.disabled{
+        cursor: default;
+        &:before{background-position:0 0 !important;}
+    }
+    &:focus,
+    &:hover{
+        &:before{
+            background-position:0 100%
+        }
+    }
+}
+/* // paging */

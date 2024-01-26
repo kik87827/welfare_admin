@@ -68,6 +68,66 @@ input.cform_input{}
     &:before{}
 }
 
+
+.board_field_container{}
+.board_form_cols{}
+.board_btn_cols{}
+
+.board_form_inner_cols{}
+.board_inner_row{
+    .btn_props_group{}
+}
+.board_inner_row:last-of-type{}
+.board_each_box{}
+.board_label_row{}
+.board_label{}
+.board_form_row{}
+select.board_select{}
+input.daterange{}
+input.board_input{}
+.btn_props_group{}
+.btn_props{
+    &.active{}
+}
+.btn_board_submit{
+    &.type2{
+        .btn_board_submit_text{}
+    }
+}
+.btn_board_submit_text{}
+
+.board_list_container{}
+.board_fraction_row{}
+.board_fraction_para{
+    strong{}
+}
+
+.list_table_wrap{}
+table.list_table{
+    thead{
+        th{
+            &:last-of-type{}
+        }
+    }
+    tbody{
+        td{
+            &:last-of-type{}
+            &.has_item{
+
+            }
+            &.nodata_td{}
+        }
+    }
+}
+.list_thtext{}
+.list_tdtext{
+    &.number{}
+}
+.btn_list_more{}
+.nodata_para{}
+
+
+
 .board_data_render{}
 .board_data_title_row{}
 .board_data_title{}

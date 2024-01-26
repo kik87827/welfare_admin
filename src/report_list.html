@@ -3,7 +3,14 @@
     @@include('./include/_head.html')
 <body class="front_body">
     <div class="page_wrap">
-        @@include('./include/_header.html')
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
+            </div>
+        </header>
         <section class="middle_wrap sub_wrap">
             <div class="sub_title_wrap">
                 <h2 class="sub_title">신고 관리</h2>
@@ -17,42 +24,34 @@
             <div class="sub_contents_wrap">
                 <div class="board_field_container">
                     <div class="board_form_cols">
-                        <div class="board_inner_row">
-                            <div class="board_each_box wid_short">
-                                <div class="board_label_row">
-                                    <p class="board_label">신고지역</p>
+                        <div class="board_form_inner_cols">
+                            <div class="board_inner_row">
+                                <div class="board_each_box">
+                                    <div class="board_label_row">
+                                        <p class="board_label">신고지역</p>
+                                    </div>
+                                    <div class="board_form_row">
+                                        <select class="board_select"><option>전체</option></select>
+                                    </div>
                                 </div>
-                                <div class="board_form_row">
-                                    <select class="board_select"><option>전체</option></select>
+                                <div class="board_each_box">
+                                    <div class="board_label_row">
+                                        <p class="board_label">진행 상태</p>
+                                    </div>
+                                    <div class="board_form_row">
+                                        <select class="board_select"><option>전체</option></select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="board_each_box wid_short">
-                                <div class="board_label_row">
-                                    <p class="board_label">진행 상태</p>
-                                </div>
-                                <div class="board_form_row">
-                                    <select class="board_select"><option>전체</option></select>
-                                </div>
-                            </div>
-                            <div class="board_each_box wid_short">
-                                <div class="board_label_row">
-                                    <p class="board_label">신고경로</p>
-                                </div>
-                                <div class="board_form_row">
-                                    <select class="board_select"><option>전체</option></select>
-                                </div>
-                            </div>
-                            <div class="board_each_box">
-                                <div class="board_label_row">
-                                    <p class="board_label">검색범위</p>
-                                </div>
-                                <div class="board_form_row">
-                                    <select class="board_select"><option>접수번호</option></select>
+                                <div class="board_each_box">
+                                    <div class="board_label_row">
+                                        <p class="board_label">신고경로</p>
+                                    </div>
+                                    <div class="board_form_row">
+                                        <select class="board_select"><option>전체</option></select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="board_inner_row">
-                            <div class="board_each_box_group">
+                            <div class="board_inner_row">
                                 <div class="board_each_box">
                                     <div class="board_label_row">
                                         <p class="board_label">신고일</p>
@@ -69,12 +68,26 @@
                                     <button class="btn_props active">기간선택</button>
                                 </div>
                             </div>
-                            <div class="board_each_box">
-                                <div class="board_label_row">
-                                    <p class="board_label">검색어</p>
+                        </div>
+                        <div class="board_form_inner_cols">
+                            <div class="board_inner_row">
+                                <div class="board_each_box">
+                                    <div class="board_label_row">
+                                        <p class="board_label">검색범위</p>
+                                    </div>
+                                    <div class="board_form_row">
+                                        <select class="board_select"><option>접수번호</option></select>
+                                    </div>
                                 </div>
-                                <div class="board_form_row">
-                                    <input type="text" class="board_input" placeholder="검색어를 입력해주세요">
+                            </div>
+                            <div class="board_inner_row">
+                                <div class="board_each_box">
+                                    <div class="board_label_row">
+                                        <p class="board_label">검색어</p>
+                                    </div>
+                                    <div class="board_form_row">
+                                        <input type="text" class="board_input" placeholder="검색어를 입력해주세요">
+                                    </div>
                                 </div>
                             </div>
                         </div>
