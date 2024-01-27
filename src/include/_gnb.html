@@ -1,15 +1,18 @@
-<nav class="hgroup_main_block">
-    <ul class="nav_item_list">
-        <li><a href="#" class="nav_item" id="nav_report"><span class="nav_item_text">신고 관리</span></a></li>
-        <li><a href="#" class="nav_item" id="nav_app_member"><span class="nav_item_text">APP회원 관리</span></a></li>
-        <li><a href="#" class="nav_item" id="nav_contents"><span class="nav_item_text">콘텐츠 관리</span></a></li>
-        <li><a href="#" class="nav_item" id="nav_stats"><span class="nav_item_text">통계 관리</span></a></li>
-        @@if(mode !== 'work' || mode !== 'normal'){
-            <li><a href="#" class="nav_item" id="nav_link"><span class="nav_item_text">연계 관리</span></a></li>
-        }
-        <li><a href="#" class="nav_item" id="nav_member"><span class="nav_item_text">회원 관리</span></a></li>
-        @@if(mode !== 'normal'){
-            <li><a href="#" class="nav_item" id="nav_my"><span class="nav_item_text">마이페이지</span></a></li>
-        }
-    </ul>
-</nav>
+<div class="hgroup_main_block">
+    <h1 class="hgroup_toplogo"><a href="#" class="hgroup_toplogo_link"><img src="./assets/images/header_toplogo.png" alt="복지위기 알림서비스 관리시스템"></a></h1>
+    <nav class="nav_item_wrap">
+        <ul class="nav_item_list">
+            <li><a href="#" class="nav_item" id="nav_report"><span class="nav_item_text">신고 관리</span></a></li>
+            <li><a href="#" class="nav_item" id="nav_app_member"><span class="nav_item_text">APP회원 관리</span></a></li>
+            <li><a href="#" class="nav_item" id="nav_contents"><span class="nav_item_text">콘텐츠 관리</span></a></li>
+            <li><a href="#" class="nav_item" id="nav_stats"><span class="nav_item_text">통계 관리</span></a></li>
+            @@if(mode !== 'work' || mode !== 'normal'){
+                <li><a href="#" class="nav_item" id="nav_link"><span class="nav_item_text">연계 관리</span></a></li>
+            }
+            <li><a href="#" class="nav_item" id="nav_member"><span class="nav_item_text">회원 관리</span></a></li>
+            @@if(mode !== 'normal'){
+                <li><a href="#" class="nav_item" id="nav_my"><span class="nav_item_text">마이페이지</span></a></li>
+            }
+        </ul>
+    </nav>
+</div>

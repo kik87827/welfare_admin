@@ -2,35 +2,44 @@
 
 
 .cform_toplogo{
-    img{}
+    text-align:center;
+    img{vertical-align: top;max-width:194px;}
 }
-.cform_contents{}
+.cform_contents{margin-top:40px;}
 .cform_element_group{}
-.cform_element{}
-input.cform_input{}
+.cform_element{
+    margin-bottom:20px;
+    &:last-of-type{margin-bottom:0;}
+}
+input.cform_input{height:48px;font-size:16px;font-weight:500;line-height:1;appearance: none;padding:0 20px;border:1px solid #fff;border-radius:6px;width:100%;box-sizing: border-box; outline:0;
+    &:focus{border-color:#208A83;color:#208A83;box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.15);}
+}
 .cform_props_group{
+    margin-top:20px;display:flex;justify-content:center;text-align:center;
     .props_item{}
 }
 
 .cform_submit_group{}
 .cform_submit_block{
-    &:last-of-type{}
+    margin-top:20px;
 }
 
 .cform_else_menu_group{
-
+    margin-top:20px; padding-top:20px; border-top:1px solid #BBBBBB;
 }
 
 .cform_else_menu_list{
+    display:flex;justify-content:center;gap:17px;
     > li {
+        position:relative;
         &:last-of-type{
-            &:after{}
+            &:after{display:none;}
         }
-        &:after{}
+        &:after{display:block;content:'';width:1px;height:10px;background:$primary;position:absolute;top:50%;right:-9px;transform: translate(0,-50%);}
     }
 }
 
-.cform_else_menu{}
+.cform_else_menu{display:inline-block;font-size:14px;font-weight:500;line-height:1;color:$primary;}
 
 .main_visual_wrap{}
 .main_visual_row{
@@ -179,7 +188,13 @@ table.list_table{
 .sub_cont_value_row{}
 
 .box_brick_wrap{}
-.box_brick{}
+.box_brick_cols{}
+.box_brick{
+    &.type2{
+        .box_brick_key{
+        } 
+    }
+}
 .box_brick_key_row{
     .box_marker_flag{}
 
@@ -189,9 +204,17 @@ table.list_table{
 .box_brick_value_row{}
 
 .box_brick_data{
-
+    &.getdata_board_render{}
 }
-
+.getdata_board_render{}
+.box_brick_incols_long{
+    .box_brick_key_row{}
+    .box_brick_value_row{}
+}
+.box_brick_incols_long{}
+.box_brick_incols_short{
+    .btn_control_card{}
+}
 
 .box_brick_data_group{}
 .data_liquid_cols{}
@@ -206,6 +229,7 @@ table.list_table{
 .btn_control_card{
     .ico{
         &.ico_down{}
+        &.ico_file{}
     }
 }
 .btn_control_card_text{}

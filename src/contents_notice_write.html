@@ -3,9 +3,126 @@
     @@include('./include/_head.html')
 <body class="front_body">
     <div class="page_wrap">
-        @@include('./include/_header.html')
-        <section class="middle_wrap" id="content">
-            내용이 들어갑니다.
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
+            </div>
+        </header>
+        <section class="middle_wrap sub_wrap">
+            <div class="sub_title_wrap">
+                <h2 class="sub_title">공지사항 상세</h2>
+                <div class="breadcrump_list_wrap">
+                    <ul class="breadcrump_list">
+                        <li><a href="#" class="breadcrump_menu">홈</a></li>
+                        <li><a href="#" class="breadcrump_menu">콘텐츠 관리</a></li>
+                        <li><a href="#" class="breadcrump_menu">등록</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_contents_wrap">
+                <div class="sub_cont_block_wrap">
+                    <div class="sub_cont_block">
+                        <div class="box_brick_wrap">
+                            <div class="box_brick_cols">
+                                <div class="box_brick type2">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">제목</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <input type="text" class="form_input">
+                                    </div>
+                                </div>
+                                <div class="box_brick">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">등록자</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="box_brick_data type2">kenjuru50</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_brick_cols">
+                                <div class="box_brick">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">대상선택</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="props_item_group">
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="target" id="target_01" checked>
+                                                <label for="target_01" class="props_label">APP</label>
+                                            </div>
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="target" id="target_02">
+                                                <label for="target_02" class="props_label">관리시스템</label>
+                                            </div>
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="target" id="target_03">
+                                                <label for="target_03" class="props_label">전체공지</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box_brick">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">사용여부</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="props_item_group">
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="use_is" id="use_is_01" checked>
+                                                <label for="use_is_01" class="props_label">게시</label>
+                                            </div>
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="use_is" id="use_is_02">
+                                                <label for="use_is_02" class="props_label">미게시</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_cont_block">
+                        <div class="box_brick">
+                            <div class="box_brick_key_row">
+                                <p class="box_brick_key">내용</p>
+                            </div>
+                            <div class="box_brick_value_row">
+                                <div class="form_textarea_wrap">
+                                    <textarea class="form_textarea" placeholder="내용">
+    
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_cont_block">
+                        <div class="box_brick">
+                            <div class="box_brick_incols_long">
+                                <div class="box_brick_key_row">
+                                    <p class="box_brick_key">파일 이미지 첨부</p>
+                                </div>
+                                <div class="box_brick_value_row">
+                                    <!-- <ul class="file_item_list">
+                                        <li><a href="#" class="file_item">참조파일.png</a><button class="btn_icon_control ico_delete"></button></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                            <div class="box_brick_incols_short">
+                                <a href="#" class="btn_control_card"><span class="btn_control_card_text">찾기</span><i class="ico ico_file"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_box_group">
+                    <a href="#" class="btn_box size_submit primary"><span class="btn_box_text">저장</span></a>
+                    <a href="#" class="btn_box size_submit"><span class="btn_box_text">목록</span></a>
+                </div>
+            </div>
         </section>
     </div>
 </body>
