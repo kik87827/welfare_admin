@@ -7,8 +7,10 @@ html{
     }
 }
 
+body{overflow-x:hidden;}
+
 .page_wrap{
-    background-color: #F5F5F5;min-height:100vh; min-width:1280px;
+    background-color: #F5F5F5;min-height:100vh; min-width:1280px;position:relative;
     &.center_form_wrap{
         background-color:#E0F6F3; display:flex; justify-content: center; align-items: center;
     }
@@ -63,18 +65,21 @@ html{
     &.sub_wrap{}
 }
 
-.sub_title_wrap{}
-.sub_title{}
-.breadcrump_list_wrap{}
+.sub_title_wrap{margin-top:20px;}
+.sub_title{font-size:32px;color:$secondary;line-height:1;font-weight:700;}
+.breadcrump_list_wrap{margin-top:8px;}
 .breadcrump_list{
+    display:flex;
     > li{
+        display:flex; align-items: center;
         &:last-of-type{
-            &:after{}
+            .breadcrump_menu{opacity:1;}
+            &:after{display:none;}
             .breadcrump_menu{}
         }
-        &:after{}
+        &:after{display:block;content:'';width:6px;height:10px;background:url("../images/chevron_right.svg") no-repeat 0 0/100% auto;margin:0 6px;}
     }
 }
-.breadcrump_menu{}
+.breadcrump_menu{font-size:14px;display:inline-block;line-height:1;color:$secondary;font-weight:500;opacity:.5;}
 
-.sub_contents_wrap{}
+.sub_contents_wrap{padding:30px 0 60px;}

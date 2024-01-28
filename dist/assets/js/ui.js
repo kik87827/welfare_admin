@@ -130,9 +130,6 @@ class DesignPopup {
     this.selector.classList.add("active");
     setTimeout(() => {
       this.selector.classList.add("motion_end");
-      setTimeout(() => {
-        setTabControl(this.selector);
-      }, 400);
     }, 30);
     if ("beforeCallback" in this.option) {
       this.option.beforeCallback();
