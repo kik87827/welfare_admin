@@ -391,10 +391,6 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   box-shadow: inset 0px 0px 5px transparent;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .page_wrap {
   background-color: #F5F5F5;
   min-height: 100vh;
@@ -578,6 +574,99 @@ body {
 .sub_contents_wrap {
   padding: 30px 0 60px;
 }
+.sub_contents_wrap.sub_template {
+  display: flex;
+  gap: 30px;
+}
+
+.sub_left_cols {
+  flex: 0 0 270px;
+}
+
+.sub_right_cols {
+  flex: 1;
+  min-width: 0;
+}
+
+.sub_left_menu_box {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sub_left_menu_list > li {
+  border-bottom: 1px solid #EEEEEE;
+}
+.sub_left_menu_list > li.active .left_menu_one_text {
+  color: #0CA99F;
+}
+.sub_left_menu_list > li.active .left_menu_one:before {
+  border-top-color: #0CA99F;
+  transform: rotate(180deg);
+  margin-top: -8px;
+}
+
+.left_menu_one {
+  background: #fff;
+  display: block;
+  position: relative;
+  padding: 20px 50px 20px 26px;
+}
+
+.left_menu_one:before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #333;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -2.5px;
+}
+
+.left_menu_one_text {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.left_menu_two_wrap {
+  background: #E0F6F3;
+  position: relative;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.left_menu_two_wrap.active {
+  visibility: visible;
+}
+.left_menu_two_wrap.active.motion.complete {
+  height: auto !important;
+}
+
+.left_menu_two_list {
+  border-top: 1px solid #0CA99F;
+  padding: 20px 36px;
+}
+.left_menu_two_list > li {
+  margin-bottom: 16px;
+}
+.left_menu_two_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.left_menu_two_text {
+  font-size: 16px;
+  display: inline-block;
+  color: #666666;
+  font-weight: 500;
+}
+
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
