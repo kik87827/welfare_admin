@@ -65,232 +65,297 @@
 					</ul>
 				</div>
 			</div>
-			<div class="sub_contents_wrap">
-				<div class="board_field_container">
-					<div class="board_form_cols">
-						<div class="board_form_inner_cols">
-							<div class="board_inner_row">
-								<div class="board_each_box">
-									<div class="board_label_row">
-										<p class="board_label">신고지역</p>
-									</div>
-									<div class="board_form_row">
-										<select class="board_select">
-											<option>전체</option>
-										</select>
-									</div>
+			<div class="sub_contents_wrap sub_template">
+				<div class="sub_left_cols">
+					<div class="sub_left_menu_box">
+						<ul class="sub_left_menu_list">
+							<li id="left_report">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">신고관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
 								</div>
-								<div class="board_each_box">
-									<div class="board_label_row">
-										<p class="board_label">진행 상태</p>
-									</div>
-									<div class="board_form_row">
-										<select class="board_select">
-											<option>전체</option>
-										</select>
-									</div>
+							</li>
+							<li id="left_app_member">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">App 회원 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">App 회원 관리</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">App 회원 탈퇴 관리</span></a></li>
+									</ul>
 								</div>
-								<div class="board_each_box">
-									<div class="board_label_row">
-										<p class="board_label">신고경로</p>
-									</div>
-									<div class="board_form_row">
-										<select class="board_select">
-											<option>전체</option>
-										</select>
-									</div>
+							</li>
+							<li id="left_contents">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">콘텐츠 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
 								</div>
-							</div>
-							<div class="board_inner_row type2">
-								<div class="board_each_box">
-									<div class="board_label_row">
-										<p class="board_label">신고일</p>
-									</div>
-									<div class="board_form_row">
-										<input type="text" class="daterange" id="report_date" value="2024-01-02 ~ 2024-02-07" />
-									</div>
+							</li>
+							<li id="left_stats">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">통계 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">알림주체별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">순위별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고유형별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고의무자별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고접수처별 통계</span></a></li>
+									</ul>
 								</div>
-								<div class="btn_props_group">
-									<button class="btn_props">전체</button>
-									<button class="btn_props">당일</button>
-									<button class="btn_props">1주일</button>
-									<button class="btn_props">1개월</button>
-									<button class="btn_props active">기간선택</button>
+							</li>
+							<li id="left_link">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">연계 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
 								</div>
-							</div>
-						</div>
-						<div class="board_form_inner_cols">
-							<div class="board_inner_row">
-								<div class="board_each_box">
-									<div class="board_label_row">
-										<p class="board_label">검색범위</p>
-									</div>
-									<div class="board_form_row">
-										<select class="board_select">
-											<option>접수번호</option>
-										</select>
-									</div>
+							</li>
+							<li id="left_member">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">회원 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
 								</div>
-							</div>
-							<div class="board_inner_row">
-								<div class="board_each_box">
-									<div class="board_label_row">
-										<p class="board_label">검색어</p>
-									</div>
-									<div class="board_form_row">
-										<input type="text" class="board_input" placeholder="검색어를 입력해주세요">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="board_btn_cols">
-						<a href="#" class="btn_board_submit"><span class="btn_board_submit_text">검색</span></a>
-						<a href="#" class="btn_board_submit type2"><span class="btn_board_submit_text">초기화</span></a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="board_list_container">
-					<div class="board_fraction_row">
-						<p class="board_fraction_para">총 <strong>1,469</strong> 건의 신고가 있습니다.</p>
-					</div>
-					<div class="list_table_wrap">
-						<table class="list_table">
-							<thead>
-								<tr>
-									<th><span class="list_thtext">순번</span></th>
-									<th><span class="list_thtext">접수번호</span></th>
-									<th><span class="list_thtext">신고 경로</span></th>
-									<th><span class="list_thtext">신고자</span></th>
-									<th><span class="list_thtext">신고자 연락처</span></th>
-									<th><span class="list_thtext">대상자</span></th>
-									<th><span class="list_thtext">신고 유형</span></th>
-									<th><span class="list_thtext">대상자 연락처</span></th>
-									<th><span class="list_thtext">신고일</span></th>
-									<th><span class="list_thtext">신고 지역</span></th>
-									<th><span class="list_thtext">처리 부서</span></th>
-									<th><span class="list_thtext">진행 상태</span></th>
-									<th><span class="list_thtext">보기</span></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><span class="list_tdtext number">1469</span></td>
-									<td><span class="list_tdtext number">2023-137</span></td>
-									<td><span class="list_tdtext">APP</span></td>
-									<td><span class="list_tdtext">박현준</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext">김윤석</span></td>
-									<td><span class="list_tdtext">아동학대</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext number">2023.12.26</span></td>
-									<td><span class="list_tdtext">서울시 금천구</span></td>
-									<td><span class="list_tdtext">-</span></td>
-									<td><span class="list_tdtext">접수완료</span></td>
-									<td class="has_item"><button class="btn_list_more"></button></td>
-								</tr>
-								<tr>
-									<td><span class="list_tdtext number">1469</span></td>
-									<td><span class="list_tdtext number">2023-137</span></td>
-									<td><span class="list_tdtext">아이사랑포털</span></td>
-									<td><span class="list_tdtext">주동현</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext">김윤석</span></td>
-									<td><span class="list_tdtext">출산·육아문제</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext number">2023.12.26</span></td>
-									<td><span class="list_tdtext">서울시 금천구</span></td>
-									<td><span class="list_tdtext">안양시청</span></td>
-									<td><span class="list_tdtext">상담중</span></td>
-									<td class="has_item"><button class="btn_list_more"></button></td>
-								</tr>
-								<tr>
-									<td><span class="list_tdtext number">1469</span></td>
-									<td><span class="list_tdtext number">2023-137</span></td>
-									<td><span class="list_tdtext">APP</span></td>
-									<td><span class="list_tdtext">박현준</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext">김윤석</span></td>
-									<td><span class="list_tdtext">아동학대</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext number">2023.12.26</span></td>
-									<td><span class="list_tdtext">서울시 금천구</span></td>
-									<td><span class="list_tdtext">-</span></td>
-									<td><span class="list_tdtext">접수완료</span></td>
-									<td class="has_item"><button class="btn_list_more"></button></td>
-								</tr>
-								<tr>
-									<td><span class="list_tdtext number">1469</span></td>
-									<td><span class="list_tdtext number">2023-137</span></td>
-									<td><span class="list_tdtext">아이사랑포털</span></td>
-									<td><span class="list_tdtext">주동현</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext">김윤석</span></td>
-									<td><span class="list_tdtext">출산·육아문제</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext number">2023.12.26</span></td>
-									<td><span class="list_tdtext">서울시 금천구</span></td>
-									<td><span class="list_tdtext">안양시청</span></td>
-									<td><span class="list_tdtext">상담중</span></td>
-									<td class="has_item"><button class="btn_list_more"></button></td>
-								</tr>
-								<tr>
-									<td><span class="list_tdtext number">1469</span></td>
-									<td><span class="list_tdtext number">2023-137</span></td>
-									<td><span class="list_tdtext">APP</span></td>
-									<td><span class="list_tdtext">박현준</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext">김윤석</span></td>
-									<td><span class="list_tdtext">아동학대</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext number">2023.12.26</span></td>
-									<td><span class="list_tdtext">서울시 금천구</span></td>
-									<td><span class="list_tdtext">-</span></td>
-									<td><span class="list_tdtext">접수완료</span></td>
-									<td class="has_item"><button class="btn_list_more"></button></td>
-								</tr>
-								<tr>
-									<td><span class="list_tdtext number">1469</span></td>
-									<td><span class="list_tdtext number">2023-137</span></td>
-									<td><span class="list_tdtext">아이사랑포털</span></td>
-									<td><span class="list_tdtext">주동현</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext">김윤석</span></td>
-									<td><span class="list_tdtext">출산·육아문제</span></td>
-									<td><span class="list_tdtext number">01028097689</span></td>
-									<td><span class="list_tdtext number">2023.12.26</span></td>
-									<td><span class="list_tdtext">서울시 금천구</span></td>
-									<td><span class="list_tdtext">안양시청</span></td>
-									<td><span class="list_tdtext">상담중</span></td>
-									<td class="has_item"><button class="btn_list_more"></button></td>
-								</tr>
-								<tr>
-									<td colspan="13" class="nodata_td">
-										<p class="nodata_para">데이터가 없습니다.</p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<!-- paging -->
-					<div class="paging_wrap">
-						<a href="#none" class="paging_control first disabled"><span class="hdtext">처음 목록으로 이동</span></a>
-						<a href="#none" class="paging_control prev disabled"><span class="hdtext">이전 목록으로 이동</span></a>
-						<div class="paging_number_group">
-							<a href="#none" class="paging_number active">1</a>
-							<a href="#none" class="paging_number">2</a>
-							<a href="#none" class="paging_number">3</a>
-							<a href="#none" class="paging_number">4</a>
-							<a href="#none" class="paging_number">5</a>
-							<a href="#none" class="paging_number">6</a>
-							<a href="#none" class="paging_number">7</a>
-							<a href="#none" class="paging_number">8</a>
-							<a href="#none" class="paging_number">9</a>
-							<a href="#none" class="paging_number">10</a>
+				<div class="sub_right_cols">
+					<div class="board_field_container">
+						<div class="board_form_cols">
+							<div class="board_form_inner_cols">
+								<div class="board_inner_row">
+									<div class="board_each_box">
+										<div class="board_label_row">
+											<p class="board_label">신고지역</p>
+										</div>
+										<div class="board_form_row">
+											<select class="board_select">
+												<option>전체</option>
+											</select>
+										</div>
+									</div>
+									<div class="board_each_box">
+										<div class="board_label_row">
+											<p class="board_label">진행 상태</p>
+										</div>
+										<div class="board_form_row">
+											<select class="board_select">
+												<option>전체</option>
+											</select>
+										</div>
+									</div>
+									<div class="board_each_box">
+										<div class="board_label_row">
+											<p class="board_label">신고경로</p>
+										</div>
+										<div class="board_form_row">
+											<select class="board_select">
+												<option>전체</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="board_inner_row type2">
+									<div class="board_each_box">
+										<div class="board_label_row">
+											<p class="board_label">신고일</p>
+										</div>
+										<div class="board_form_row">
+											<input type="text" class="daterange" id="report_date" value="2024-01-02 ~ 2024-02-07" />
+										</div>
+									</div>
+									<div class="btn_props_group">
+										<button class="btn_props">전체</button>
+										<button class="btn_props">당일</button>
+										<button class="btn_props">1주일</button>
+										<button class="btn_props">1개월</button>
+										<button class="btn_props active">기간선택</button>
+									</div>
+								</div>
+							</div>
+							<div class="board_form_inner_cols">
+								<div class="board_inner_row">
+									<div class="board_each_box">
+										<div class="board_label_row">
+											<p class="board_label">검색범위</p>
+										</div>
+										<div class="board_form_row">
+											<select class="board_select">
+												<option>접수번호</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="board_inner_row">
+									<div class="board_each_box">
+										<div class="board_label_row">
+											<p class="board_label">검색어</p>
+										</div>
+										<div class="board_form_row">
+											<input type="text" class="board_input" placeholder="검색어를 입력해주세요">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
-						<a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+						<div class="board_btn_cols">
+							<a href="#" class="btn_board_submit"><span class="btn_board_submit_text">검색</span></a>
+							<a href="#" class="btn_board_submit type2"><span class="btn_board_submit_text">초기화</span></a>
+						</div>
 					</div>
-					<!-- // paging -->
+					<div class="board_list_container">
+						<div class="board_fraction_row">
+							<p class="board_fraction_para">총 <strong>1,469</strong> 건의 신고가 있습니다.</p>
+						</div>
+						<div class="list_table_wrap">
+							<table class="list_table">
+								<thead>
+									<tr>
+										<th><span class="list_thtext">순번</span></th>
+										<th><span class="list_thtext">접수번호</span></th>
+										<th><span class="list_thtext">신고 경로</span></th>
+										<th><span class="list_thtext">신고자</span></th>
+										<th><span class="list_thtext">신고자 연락처</span></th>
+										<th><span class="list_thtext">대상자</span></th>
+										<th><span class="list_thtext">신고 유형</span></th>
+										<th><span class="list_thtext">대상자 연락처</span></th>
+										<th><span class="list_thtext">신고일</span></th>
+										<th><span class="list_thtext">신고 지역</span></th>
+										<th><span class="list_thtext">처리 부서</span></th>
+										<th><span class="list_thtext">진행 상태</span></th>
+										<th><span class="list_thtext">보기</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span class="list_tdtext number">1469</span></td>
+										<td><span class="list_tdtext number">2023-137</span></td>
+										<td><span class="list_tdtext">APP</span></td>
+										<td><span class="list_tdtext">박현준</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext">김윤석</span></td>
+										<td><span class="list_tdtext">아동학대</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext number">2023.12.26</span></td>
+										<td><span class="list_tdtext">서울시 금천구</span></td>
+										<td><span class="list_tdtext">-</span></td>
+										<td><span class="list_tdtext">접수완료</span></td>
+										<td class="has_item"><button class="btn_list_more"></button></td>
+									</tr>
+									<tr>
+										<td><span class="list_tdtext number">1469</span></td>
+										<td><span class="list_tdtext number">2023-137</span></td>
+										<td><span class="list_tdtext">아이사랑포털</span></td>
+										<td><span class="list_tdtext">주동현</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext">김윤석</span></td>
+										<td><span class="list_tdtext">출산·육아문제</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext number">2023.12.26</span></td>
+										<td><span class="list_tdtext">서울시 금천구</span></td>
+										<td><span class="list_tdtext">안양시청</span></td>
+										<td><span class="list_tdtext">상담중</span></td>
+										<td class="has_item"><button class="btn_list_more"></button></td>
+									</tr>
+									<tr>
+										<td><span class="list_tdtext number">1469</span></td>
+										<td><span class="list_tdtext number">2023-137</span></td>
+										<td><span class="list_tdtext">APP</span></td>
+										<td><span class="list_tdtext">박현준</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext">김윤석</span></td>
+										<td><span class="list_tdtext">아동학대</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext number">2023.12.26</span></td>
+										<td><span class="list_tdtext">서울시 금천구</span></td>
+										<td><span class="list_tdtext">-</span></td>
+										<td><span class="list_tdtext">접수완료</span></td>
+										<td class="has_item"><button class="btn_list_more"></button></td>
+									</tr>
+									<tr>
+										<td><span class="list_tdtext number">1469</span></td>
+										<td><span class="list_tdtext number">2023-137</span></td>
+										<td><span class="list_tdtext">아이사랑포털</span></td>
+										<td><span class="list_tdtext">주동현</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext">김윤석</span></td>
+										<td><span class="list_tdtext">출산·육아문제</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext number">2023.12.26</span></td>
+										<td><span class="list_tdtext">서울시 금천구</span></td>
+										<td><span class="list_tdtext">안양시청</span></td>
+										<td><span class="list_tdtext">상담중</span></td>
+										<td class="has_item"><button class="btn_list_more"></button></td>
+									</tr>
+									<tr>
+										<td><span class="list_tdtext number">1469</span></td>
+										<td><span class="list_tdtext number">2023-137</span></td>
+										<td><span class="list_tdtext">APP</span></td>
+										<td><span class="list_tdtext">박현준</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext">김윤석</span></td>
+										<td><span class="list_tdtext">아동학대</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext number">2023.12.26</span></td>
+										<td><span class="list_tdtext">서울시 금천구</span></td>
+										<td><span class="list_tdtext">-</span></td>
+										<td><span class="list_tdtext">접수완료</span></td>
+										<td class="has_item"><button class="btn_list_more"></button></td>
+									</tr>
+									<tr>
+										<td><span class="list_tdtext number">1469</span></td>
+										<td><span class="list_tdtext number">2023-137</span></td>
+										<td><span class="list_tdtext">아이사랑포털</span></td>
+										<td><span class="list_tdtext">주동현</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext">김윤석</span></td>
+										<td><span class="list_tdtext">출산·육아문제</span></td>
+										<td><span class="list_tdtext number">01028097689</span></td>
+										<td><span class="list_tdtext number">2023.12.26</span></td>
+										<td><span class="list_tdtext">서울시 금천구</span></td>
+										<td><span class="list_tdtext">안양시청</span></td>
+										<td><span class="list_tdtext">상담중</span></td>
+										<td class="has_item"><button class="btn_list_more"></button></td>
+									</tr>
+									<tr>
+										<td colspan="13" class="nodata_td">
+											<p class="nodata_para">데이터가 없습니다.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- paging -->
+						<div class="paging_wrap">
+							<a href="#none" class="paging_control first disabled"><span class="hdtext">처음 목록으로 이동</span></a>
+							<a href="#none" class="paging_control prev disabled"><span class="hdtext">이전 목록으로 이동</span></a>
+							<div class="paging_number_group">
+								<a href="#none" class="paging_number active">1</a>
+								<a href="#none" class="paging_number">2</a>
+								<a href="#none" class="paging_number">3</a>
+								<a href="#none" class="paging_number">4</a>
+								<a href="#none" class="paging_number">5</a>
+								<a href="#none" class="paging_number">6</a>
+								<a href="#none" class="paging_number">7</a>
+								<a href="#none" class="paging_number">8</a>
+								<a href="#none" class="paging_number">9</a>
+								<a href="#none" class="paging_number">10</a>
+							</div>
+							<a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+							<a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+						</div>
+						<!-- // paging -->
+					</div>
 				</div>
 			</div>
 		</section>

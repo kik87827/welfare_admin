@@ -407,6 +407,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.page_wrap.main_wrap .hgroup_wrap, .page_wrap.main_wrap .middle_wrap {
+  max-width: 1400px;
+}
 
 .center_form_inner {
   padding: 60px 30px;
@@ -419,7 +422,7 @@ body {
 }
 
 .hgroup_wrap {
-  max-width: 1400px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 20px 30px 0;
 }
@@ -521,10 +524,11 @@ body {
 }
 
 .middle_wrap {
-  max-width: 1400px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 30px;
 }
+
 .sub_title_wrap {
   margin-top: 20px;
 }
@@ -574,7 +578,6 @@ body {
 .sub_contents_wrap {
   padding: 30px 0 60px;
 }
-
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
