@@ -1,7 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   commonInit();
-});
-window.addEventListener("load", () => {
   layoutFunc();
 });
 
@@ -55,14 +53,48 @@ function resizeAction(callback) {
  * 레이아웃
  */
 function layoutFunc() {
-
+  const left_menu_one = document.querySelectorAll(".left_menu_one");
+  if (!!left_menu_one) {
+    left_menu_one.forEach((item) => {
+      const loop_item = item;
+      loop_item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const eventItem = e.currentTarget;
+        const eventParent = eventItem.closest("li");
+        const eventTarget = eventParent.querySelector(".left_menu_two_wrap");
+        const eventTargetContents = eventTarget.children;
+        eventParent.classList.toggle("active");
+        eventTarget.style.height = eventTargetContents[0].getBoundingClientRect().height + "px";
+        if (eventParent.classList.contains("active")) {
+          eventTarget.classList.add("active", "motion");
+          setTimeout(() => {
+            eventTarget.style.height = 'auto';
+          }, 500);
+        } else {
+          setTimeout(() => {
+            eventTarget.style.height = "0px";
+            setTimeout(() => {
+              eventTarget.classList.remove("active", "motion");
+            }, 490);
+          }, 10);
+        }
+      });
+    });
+  }
 }
 
 /* rock */
 function rockMenu(item) {
-  const itemMenu = document.querySelector(item);
+  const itemMenu = document.querySelectorAll(item);
   if (!!itemMenu) {
-    itemMenu.classList.add("active");
+    itemMenu.forEach((item) => {
+      if (item.closest(".sub_left_menu_list")) {
+        let eventTarget = item.querySelector(".left_menu_one");
+        let eventObj = new Event("click");
+        eventTarget.dispatchEvent(eventObj);
+      }
+      item.classList.add("active");
+    });
   }
 }
 

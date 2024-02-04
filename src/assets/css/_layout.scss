@@ -108,13 +108,12 @@ body{}
 .left_menu_one:before{display:block;content:'';width:0;height:0;border:5px solid transparent;border-top-color:#333;position:absolute;top:50%;right:30px;margin-top:-2.5px;}
 .left_menu_one_text{font-size:18px;color:#333333; font-weight:500; letter-spacing: -0.05em;}
 .left_menu_two_wrap{
-    background:#E0F6F3; position:relative; visibility: hidden; height:0; overflow:hidden;
+    background:#E0F6F3; position:relative; visibility: hidden; height:0; overflow:hidden; transition:.5s;
     &.active{
         visibility: visible;
         .left_menu_two_list{}
         &.motion{
             .left_menu_two_list{}
-            &.complete{height : auto !important;}
         }
     }
 }

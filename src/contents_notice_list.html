@@ -221,7 +221,9 @@
             </div>
         </section>
         <script>
-            rockMenu("#nav_contents");
+            window.addEventListener("DOMContentLoaded", () => {
+                rockMenu("#nav_contents, #left_contents");
+            });
 
 			$(function() {
 				$("#report_date").daterangepicker({

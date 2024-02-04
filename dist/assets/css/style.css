@@ -641,14 +641,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   visibility: hidden;
   height: 0;
   overflow: hidden;
+  transition: 0.5s;
 }
 .left_menu_two_wrap.active {
   visibility: visible;
 }
-.left_menu_two_wrap.active.motion.complete {
-  height: auto !important;
-}
-
 .left_menu_two_list {
   border-top: 1px solid #0CA99F;
   padding: 20px 36px;
