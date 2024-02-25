@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html')
+<body class="front_body">
+    <div class="page_wrap">
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
+            </div>
+        </header>
+        <section class="middle_wrap sub_wrap">
+            <div class="sub_title_wrap">
+                <h2 class="sub_title">설문조사 상세</h2>
+                <div class="breadcrump_list_wrap">
+                    <ul class="breadcrump_list">
+                        <li><a href="#" class="breadcrump_menu">홈</a></li>
+                        <li><a href="#" class="breadcrump_menu">콘텐츠 관리</a></li>
+                        <li><a href="#" class="breadcrump_menu">설문조사 관리</a></li>
+                        <li><a href="#" class="breadcrump_menu">설문조사 상세</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_contents_wrap sub_template">
+                <div class="sub_left_cols">
+                    @@include('./include/_left.html')
+                </div>
+                <div class="sub_right_cols">
+                    <div class="sub_cont_block_wrap">
+                        <div class="sub_cont_block">
+                            <div class="box_brick_wrap">
+                                <div class="box_brick type2">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">제목</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <input type="text" class="form_input" placeholder="제목 입력">
+                                    </div>
+                                </div>
+                                <div class="box_brick short_wid">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">등록자</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="box_brick_data type2">kenjuru50</div>
+                                    </div>
+                                </div>
+                                <div class="box_brick short_wid2">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">대상선택</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="props_item_group">
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="form_type" id="form_type_01" checked>
+                                                <label for="form_type_01" class="props_label">주관 설문 조사</label>
+                                            </div>
+                                            <div class="props_item">
+                                                <input type="radio" class="props_form" name="form_type" id="form_type_02">
+                                                <label for="form_type_02" class="props_label">객관 설문 조사</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_cont_block">
+                            <div class="box_brick">
+                                <div class="box_brick_key_row">
+                                    <p class="box_brick_key">질문</p>
+                                </div>
+                                <div class="box_brick_value_row">
+                                    <div class="form_textarea_wrap">
+                                        <textarea class="form_textarea size2" placeholder="내용 입력">국민참여형 복지위기 알림 서비스 앱이 사용이 편리한가요?</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_cont_block">
+                            <div class="box_brick_wrap">
+                                <div class="box_brick short_wid3">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">문항</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="question_vitem_wrap">
+                                            <div class="question_vitem">
+                                                <p class="question_label">보기 항목 1</p>
+                                                <div class="question_form">
+                                                    <input type="text" class="form_input" placeholder="보기 항목 1 입력" value="매우 편리하다">
+                                                </div>
+                                            </div>
+                                            <div class="question_vitem">
+                                                <p class="question_label">보기 항목 2</p>
+                                                <div class="question_form">
+                                                    <input type="text" class="form_input" placeholder="보기 항목 2 입력" value="매우 편리하다">
+                                                </div>
+                                            </div>
+                                            <div class="question_vitem">
+                                                <p class="question_label">보기 항목 3</p>
+                                                <div class="question_form">
+                                                    <input type="text" class="form_input" placeholder="보기 항목 3 입력" value="매우 편리하다">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_formbox_submit_wrap">
+                                            <a href="javascript:;" class="btn_formbox_submit">
+                                                <span class="formbox_submit_main">문항 추가</span>
+                                                <span class="formbox_submit_sub">현재 3문항</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box_brick direction_type">
+                                    <div class="box_brick_key_row">
+                                        <p class="box_brick_key">설문조사 결과 보기</p>
+                                    </div>
+                                    <div class="box_brick_value_row">
+                                        <div class="cardbox_wrap">
+                                            <div class="cardbox">
+                                                <div class="rank_list_wrap">
+                                                    <ul class="rank_list">
+                                                        <li>
+                                                            <span class="rank_bullet">1.</span>
+                                                            <div class="rank_liquid">
+                                                                <div class="rank_liquid_key">
+                                                                    <span class="rank_key_main">매우 편리하다</span>
+                                                                    <span class="rank_key_sub">138표</span>
+                                                                </div>  
+                                                                <div class="rank_liquid_value">
+                                                                    <div class="rank_value_group">
+                                                                        <span class="rank_value_number">52</span>
+                                                                        <span class="rank_value_unit">%</span>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="rank_bullet">2.</span>
+                                                            <div class="rank_liquid">
+                                                                <div class="rank_liquid_key">
+                                                                    <span class="rank_key_main">편리하다</span>
+                                                                    <span class="rank_key_sub">89표</span>
+                                                                </div>  
+                                                                <div class="rank_liquid_value">
+                                                                    <div class="rank_value_group">
+                                                                        <span class="rank_value_number">24</span>
+                                                                        <span class="rank_value_unit">%</span>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="rank_bullet">3.</span>
+                                                            <div class="rank_liquid">
+                                                                <div class="rank_liquid_key">
+                                                                    <span class="rank_key_main">불편하다</span>
+                                                                    <span class="rank_key_sub">28표</span>
+                                                                </div>  
+                                                                <div class="rank_liquid_value">
+                                                                    <div class="rank_value_group">
+                                                                        <span class="rank_value_number">15</span>
+                                                                        <span class="rank_value_unit">%</span>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <span class="rank_bullet">4.</span>
+                                                            <div class="rank_liquid">
+                                                                <div class="rank_liquid_key">
+                                                                    <span class="rank_key_main">매우 불편하다</span>
+                                                                    <span class="rank_key_sub">13표</span>
+                                                                </div>  
+                                                                <div class="rank_liquid_value">
+                                                                    <div class="rank_value_group">
+                                                                        <span class="rank_value_number">7</span>
+                                                                        <span class="rank_value_unit">%</span>
+                                                                    </div>
+                                                                </div>  
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="cardbox">
+                                                <div class="pie_chart_wrap">
+                                                    <!-- chart 영역 -->
+                                                    <img src="./assets/images/welfare_chart_dummy.png" alt="">
+                                                    <!-- // chart 영역 -->
+                                                </div>
+                                            </div>
+                                            <div class="cardbox">
+                                                <div class="stick_chart_wrap">
+                                                    <div class="stick_value_row">
+                                                        <div class="stick_value_cols"><div class="stick_value_bar primary" style="min-height:52%"><span class="stick_bar_text">52%</span></div></div>
+                                                        <div class="stick_value_cols"><div class="stick_value_bar secondary" style="min-height:24%"><span class="stick_bar_text">24%</span></div></div>
+                                                        <div class="stick_value_cols"><div class="stick_value_bar secondary dep02" style="min-height:15%"><span class="stick_bar_text">15%</span></div></div>
+                                                        <div class="stick_value_cols"><div class="stick_value_bar secondary dep03" style="min-height:7%"><span class="stick_bar_text">07%</span></div></div>
+                                                    </div>
+                                                    <div class="stick_label_row">
+                                                        <div class="stick_label_cols"><p class="stick_label_text">매우<br>편리하다</p></div>
+                                                        <div class="stick_label_cols"><p class="stick_label_text">편리하다</p></div>
+                                                        <div class="stick_label_cols"><p class="stick_label_text">불편하다</p></div>
+                                                        <div class="stick_label_cols"><p class="stick_label_text">매우<br>불편하다</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_box_group">
+                        <a href="#" class="btn_box size_submit primary"><span class="btn_box_text">저장</span></a>
+                        <a href="#" class="btn_box size_submit"><span class="btn_box_text">목록</span></a>
+                        <a href="#" class="btn_box size_submit skin2"><span class="btn_box_text">삭제</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                rockMenu("#nav_contents, #left_contents");
+            });
+        </script>
+    </div>
+</body>
+</html>

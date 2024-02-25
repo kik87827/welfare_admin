@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=1280" />
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/moment.min.js"></script>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/daterangepicker.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-ui.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<title>복지위기 알림서비스 관리시스템</title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_wrap">
+			<div class="hgroup_wrap">
+				<div class="hgroup_util_block">
+					<ul class="hgroup_util_list">
+						<li>
+							<p class="util_login_copy"><strong>유상욱님</strong> 로그인하였습니다.</p>
+						</li>
+						<li>
+							<div class="util_login_obj">
+								<span class="util_login_key">마지막 로그인</span>
+								<span class="util_login_value">2024-01-08 09:01</span>
+							</div>
+						</li>
+						<li><a href="#" class="btn_login_box">로그아웃</a></li>
+					</ul>
+				</div>
+				<div class="hgroup_main_block">
+					<h1 class="hgroup_toplogo"><a href="#" class="hgroup_toplogo_link"><img src="./assets/images/header_toplogo.png" alt="복지위기 알림서비스 관리시스템"></a></h1>
+					<nav class="nav_item_wrap">
+						<ul class="nav_item_list">
+							<li><a href="#" class="nav_item" id="nav_report"><span class="nav_item_text">신고 관리</span></a></li>
+							<li><a href="#" class="nav_item" id="nav_app_member"><span class="nav_item_text">APP회원 관리</span></a></li>
+							<li><a href="#" class="nav_item" id="nav_contents"><span class="nav_item_text">콘텐츠 관리</span></a></li>
+							<li><a href="#" class="nav_item" id="nav_stats"><span class="nav_item_text">통계 관리</span></a></li>
+
+							<li><a href="#" class="nav_item" id="nav_member"><span class="nav_item_text">회원 관리</span></a></li>
+
+							<li><a href="#" class="nav_item" id="nav_my"><span class="nav_item_text">마이페이지</span></a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="middle_wrap sub_wrap">
+			<div class="sub_title_wrap">
+				<h2 class="sub_title">설문조사 상세</h2>
+				<div class="breadcrump_list_wrap">
+					<ul class="breadcrump_list">
+						<li><a href="#" class="breadcrump_menu">홈</a></li>
+						<li><a href="#" class="breadcrump_menu">콘텐츠 관리</a></li>
+						<li><a href="#" class="breadcrump_menu">설문조사 관리</a></li>
+						<li><a href="#" class="breadcrump_menu">설문조사 상세</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub_contents_wrap sub_template">
+				<div class="sub_left_cols">
+					<div class="sub_left_menu_box">
+						<ul class="sub_left_menu_list">
+							<li id="left_report">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">신고관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_app_member">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">App 회원 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">App 회원 관리</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">App 회원 탈퇴 관리</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_contents">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">콘텐츠 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">공지사항 관리</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">설문조사 관리</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_stats">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">통계 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">알림주체별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">순위별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고유형별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고의무자별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고접수처별 통계</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_link">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">연계 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_member">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">회원 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub_right_cols">
+					<div class="sub_cont_block_wrap">
+						<div class="sub_cont_block">
+							<div class="box_brick_wrap">
+								<div class="box_brick type2">
+									<div class="box_brick_key_row">
+										<p class="box_brick_key">제목</p>
+									</div>
+									<div class="box_brick_value_row">
+										<input type="text" class="form_input" placeholder="제목 입력">
+									</div>
+								</div>
+								<div class="box_brick short_wid">
+									<div class="box_brick_key_row">
+										<p class="box_brick_key">등록자</p>
+									</div>
+									<div class="box_brick_value_row">
+										<div class="box_brick_data type2">kenjuru50</div>
+									</div>
+								</div>
+								<div class="box_brick short_wid2">
+									<div class="box_brick_key_row">
+										<p class="box_brick_key">대상선택</p>
+									</div>
+									<div class="box_brick_value_row">
+										<div class="props_item_group">
+											<div class="props_item">
+												<input type="radio" class="props_form" name="form_type" id="form_type_01" checked>
+												<label for="form_type_01" class="props_label">주관 설문 조사</label>
+											</div>
+											<div class="props_item">
+												<input type="radio" class="props_form" name="form_type" id="form_type_02">
+												<label for="form_type_02" class="props_label">객관 설문 조사</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub_cont_block">
+							<div class="box_brick">
+								<div class="box_brick_key_row">
+									<p class="box_brick_key">질문</p>
+								</div>
+								<div class="box_brick_value_row">
+									<div class="form_textarea_wrap">
+										<textarea class="form_textarea size2" placeholder="내용 입력">국민참여형 복지위기 알림 서비스 앱이 사용이 편리한가요?</textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub_cont_block">
+							<div class="box_brick_wrap">
+								<div class="box_brick short_wid3">
+									<div class="box_brick_key_row">
+										<p class="box_brick_key">문항</p>
+									</div>
+									<div class="box_brick_value_row">
+										<div class="question_vitem_wrap">
+											<div class="question_vitem">
+												<p class="question_label">보기 항목 1</p>
+												<div class="question_form">
+													<input type="text" class="form_input" placeholder="보기 항목 1 입력" value="매우 편리하다">
+												</div>
+											</div>
+											<div class="question_vitem">
+												<p class="question_label">보기 항목 2</p>
+												<div class="question_form">
+													<input type="text" class="form_input" placeholder="보기 항목 2 입력" value="매우 편리하다">
+												</div>
+											</div>
+											<div class="question_vitem">
+												<p class="question_label">보기 항목 3</p>
+												<div class="question_form">
+													<input type="text" class="form_input" placeholder="보기 항목 3 입력" value="매우 편리하다">
+												</div>
+											</div>
+										</div>
+										<div class="btn_formbox_submit_wrap">
+											<a href="javascript:;" class="btn_formbox_submit">
+												<span class="formbox_submit_main">문항 추가</span>
+												<span class="formbox_submit_sub">현재 3문항</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="box_brick direction_type">
+									<div class="box_brick_key_row">
+										<p class="box_brick_key">설문조사 결과 보기</p>
+									</div>
+									<div class="box_brick_value_row">
+										<div class="cardbox_wrap">
+											<div class="cardbox">
+												<div class="rank_list_wrap">
+													<ul class="rank_list">
+														<li>
+															<span class="rank_bullet">1.</span>
+															<div class="rank_liquid">
+																<div class="rank_liquid_key">
+																	<span class="rank_key_main">매우 편리하다</span>
+																	<span class="rank_key_sub">138표</span>
+																</div>
+																<div class="rank_liquid_value">
+																	<div class="rank_value_group">
+																		<span class="rank_value_number">52</span>
+																		<span class="rank_value_unit">%</span>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<span class="rank_bullet">2.</span>
+															<div class="rank_liquid">
+																<div class="rank_liquid_key">
+																	<span class="rank_key_main">편리하다</span>
+																	<span class="rank_key_sub">89표</span>
+																</div>
+																<div class="rank_liquid_value">
+																	<div class="rank_value_group">
+																		<span class="rank_value_number">24</span>
+																		<span class="rank_value_unit">%</span>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<span class="rank_bullet">3.</span>
+															<div class="rank_liquid">
+																<div class="rank_liquid_key">
+																	<span class="rank_key_main">불편하다</span>
+																	<span class="rank_key_sub">28표</span>
+																</div>
+																<div class="rank_liquid_value">
+																	<div class="rank_value_group">
+																		<span class="rank_value_number">15</span>
+																		<span class="rank_value_unit">%</span>
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<span class="rank_bullet">4.</span>
+															<div class="rank_liquid">
+																<div class="rank_liquid_key">
+																	<span class="rank_key_main">매우 불편하다</span>
+																	<span class="rank_key_sub">13표</span>
+																</div>
+																<div class="rank_liquid_value">
+																	<div class="rank_value_group">
+																		<span class="rank_value_number">7</span>
+																		<span class="rank_value_unit">%</span>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cardbox">
+												<div class="pie_chart_wrap">
+													<!-- chart 영역 -->
+													<img src="./assets/images/welfare_chart_dummy.png" alt="">
+													<!-- // chart 영역 -->
+												</div>
+											</div>
+											<div class="cardbox">
+												<div class="stick_chart_wrap">
+													<div class="stick_value_row">
+														<div class="stick_value_cols">
+															<div class="stick_value_bar primary" style="min-height:52%"><span class="stick_bar_text">52%</span></div>
+														</div>
+														<div class="stick_value_cols">
+															<div class="stick_value_bar secondary" style="min-height:24%"><span class="stick_bar_text">24%</span></div>
+														</div>
+														<div class="stick_value_cols">
+															<div class="stick_value_bar secondary dep02" style="min-height:15%"><span class="stick_bar_text">15%</span></div>
+														</div>
+														<div class="stick_value_cols">
+															<div class="stick_value_bar secondary dep03" style="min-height:7%"><span class="stick_bar_text">07%</span></div>
+														</div>
+													</div>
+													<div class="stick_label_row">
+														<div class="stick_label_cols">
+															<p class="stick_label_text">매우<br>편리하다</p>
+														</div>
+														<div class="stick_label_cols">
+															<p class="stick_label_text">편리하다</p>
+														</div>
+														<div class="stick_label_cols">
+															<p class="stick_label_text">불편하다</p>
+														</div>
+														<div class="stick_label_cols">
+															<p class="stick_label_text">매우<br>불편하다</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn_box_group">
+						<a href="#" class="btn_box size_submit primary"><span class="btn_box_text">저장</span></a>
+						<a href="#" class="btn_box size_submit"><span class="btn_box_text">목록</span></a>
+						<a href="#" class="btn_box size_submit skin2"><span class="btn_box_text">삭제</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				rockMenu("#nav_contents, #left_contents");
+			});
+		</script>
+	</div>
+</body>
+
+</html>

@@ -202,3 +202,11 @@ class DesignPopup {
     }
   }
 }
+
+
+function datePickerCall(target, option) {
+  $(target).daterangepicker(option);
+  /*  $(target).on('apply.daterangepicker', function(ev, picker) {
+     $(this).val(picker.startDate.format('YYYY-MM-DD') + ' ~ ' + picker.endDate.format('YYYY-MM-DD'));
+   }); */
+}

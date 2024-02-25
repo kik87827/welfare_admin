@@ -92,7 +92,7 @@
 								<div class="left_menu_two_wrap">
 									<ul class="left_menu_two_list">
 										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">공지사항 관리</span></a></li>
-										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">설문조사 관리</span></a></li>
 									</ul>
 								</div>
 							</li>
@@ -166,12 +166,22 @@
 									</div>
 								</div>
 								<div class="board_inner_row type2">
-									<div class="board_each_box">
-										<div class="board_label_row">
-											<p class="board_label">신고일</p>
+									<div class="board_each_box_wrap">
+										<div class="board_each_box">
+											<div class="board_label_row">
+												<p class="board_label">신고일</p>
+											</div>
+											<div class="board_form_row">
+												<input type="text" class="daterange" id="report_start" value="2024-01-02" />
+											</div>
 										</div>
-										<div class="board_form_row">
-											<input type="text" class="daterange" id="report_date" value="2024-01-02 ~ 2024-02-07" />
+										<div class="board_each_box">
+											<div class="board_label_row">
+												<p class="board_label vhidden">신고일</p>
+											</div>
+											<div class="board_form_row">
+												<input type="text" class="daterange" id="report_end" value="2024-02-07" />
+											</div>
 										</div>
 									</div>
 									<div class="btn_props_group">
@@ -365,8 +375,8 @@
 			});
 
 			$(function() {
-				$("#report_date").daterangepicker({
-					autoUpdateInput: false,
+				/* $("#report_date").daterangepicker({
+					autoUpdateInput: true,
 					elseMent: "신고일 선택",
 					locale: {
 						format: 'YYYY-MM-DD',
@@ -375,9 +385,22 @@
 						applyLabel: "적용"
 					}
 				});
-				$("#layer_calendar_startdate").on('apply.daterangepicker', function(ev, picker) {
+				$("#report_date").on('apply.daterangepicker', function(ev, picker) {
 					$(this).val(picker.startDate.format('YYYY-MM-DD') + ' ~ ' + picker.endDate.format('YYYY-MM-DD'));
-				});
+				}); */
+				datePickerCall(
+					"#report_start,#report_end", {
+						singleDatePicker: true,
+						autoUpdateInput: true,
+						elseMent: "신고일 선택",
+						locale: {
+							format: 'YYYY-MM-DD',
+							"daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+							"monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+							applyLabel: "적용"
+						}
+					}
+				)
 			});
 		</script>
 	</div>
