@@ -375,7 +375,7 @@ table.list_table{
 .rank_value_number{@include rubik_medium;}
 .rank_value_unit{@include rubik;}
 .pie_chart_wrap{
-    display:flex;height:100%;align-items:center;
+    display:flex;height:100%;align-items:center; justify-content: center;
     > img{}
 }
 

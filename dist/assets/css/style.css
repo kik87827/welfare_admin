@@ -4524,6 +4524,7 @@ table.list_table tbody td.nodata_td {
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: center;
 }
 .stick_chart_wrap {
   flex: 1;
