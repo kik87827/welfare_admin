@@ -3506,6 +3506,17 @@ input.form_input {
   color: #0F2139;
 }
 
+.form_data {
+  font-size: 18px;
+  line-height: 1.4;
+  box-sizing: border-box;
+  min-height: 24px;
+  font-weight: 500;
+  color: #0F2139;
+  display: flex;
+  align-items: center;
+}
+
 textarea.form_textarea {
   vertical-align: top;
   width: 100%;
