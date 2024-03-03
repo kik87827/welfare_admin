@@ -31,7 +31,7 @@
 				</h1>
 				<div class="guide_util_group">
 					<ul class="guide_util_list">
-						<li><a href="codinglist.html" class="guide_util_menu">컴포넌트 가이드</a></li>
+						<li><a href="component.html" class="guide_util_menu">컴포넌트 가이드</a></li>
 					</ul>
 				</div>
 			</hgroup>
@@ -300,6 +300,162 @@
 								기타플러그인(달력) : _daterangepicker.scss<br>
 								기타플러그인(달력2) : _jqueryui.scss<br>
 								스와이퍼 : _swiper.min.scss<br>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">작업 폴더 구조</h3>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">컴파일전(src)</p>
+						<ul class="vertical_cont_copy_list">
+							<li>assets</li>
+							<li>assets - css - _reset.scss(기본정의)</li>
+							<li>assets - css - _layout.scss(레이아웃)</li>
+							<li>assets - css - _contents.scss(콘텐츠)</li>
+							<li>assets - css - _component.scss(콤포넌트)</li>
+							<li>assets - css - _mixin.scss(기본변수)</li>
+							<li>assets - css - _webfont.scss(웹폰트)</li>
+							<li>assets - css - _daterangepicker.scss(기타플러그인(달력))</li>
+							<li>assets - css - _jqueryui.scss(기타플러그인(달력2))</li>
+							<li>assets - css - _swiper.min.scss(스와이퍼)</li>
+							<li>assets - js - ui.js(커스텀공통)</li>
+							<li>assets - js - main.js(메인)</li>
+							<li>
+								root - html 파일
+							</li>
+						</ul>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">컴파일후(dist)</p>
+						<ul class="vertical_cont_copy_list">
+							<li>assets</li>
+							<li>assets - style.css(merge 스타일)</li>
+
+							<li>assets - js - ui.js(커스텀공통)</li>
+							<li>assets - js - main.js(메인)</li>
+							<li>root - html 파일</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">특수 문자 표현</h3>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<ul class="vertical_cont_copy_list">
+							<li>유효성 검사 및 소스 해석에서 문제가 발생하므로 반드시 변환해야 합니다.</li>
+							<li>
+								< (&lt;),>(gt;), & (&amp;) 는 반드시 변환합니다.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">HTML 문서 세팅</h3>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<ul class="vertical_cont_copy_list">
+							<li>모든 html 문서는 HTML5 를 기본으로 한다.
+								<xmp>
+									<!DOCTYPE HTML>
+								</xmp>
+							</li>
+							<li>모바일의 경우 뷰포트 설정을 한다.
+								<xmp>
+									<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi" />
+								</xmp>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">들여쓰기</h3>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<ul class="vertical_cont_copy_list">
+							<li>들여쓰기는 1탭으로 하되 1탭은 4공백으로 세팅을 하도록 합니다.</li>
+							<li>에디터별 공백이 다를 수 있으므로 제공되는 설정파일을 참조하도록 합니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">이미지 저장</h3>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<ul class="vertical_cont_copy_list">
+							<li>기본적으로 이미지는 png8 형식을 사용하여 저장합니다.</li>
+							<li>투명이나 그라데이션 효과가 있는 경우 png24 형식으로 저장합니다.</li>
+							<li>sprite 이미지의 경우는 반드시 png24로 저장합니다.</li>
+							<li>jpg 확장자를 사용 할 경우 기본 최대 high 퀄리티까지만 세팅하여 저장합니다. (별도 요청시 퀄리티 수준은 변경 가능)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">HTML 문서구조</h3>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">01. 코딩방식</p>
+						<ul class="vertical_cont_copy_list">
+							<li>코딩은 워지윅 방식이 아닌 Text-Editor를 이용한 하드코딩을 기준으로 합니다.</li>
+						</ul>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">02. 크로스 브라우징을 원칙</p>
+						<ul class="vertical_cont_copy_list">
+							<li>제작 되는 모든 웹페이지는 아래 해당 웹브라우져 버전에서 호환되도록 제작하는 것을 원칙으로 하되, 프로젝트 성격에따라 다를 수도 있습니다. (국내 2009웹표준화 사업의 일환으로 최소 3개 브라우저에서 호환되도록 작업.)</li>
+							<li>각 최신버전 기준이며, IE의 경우 프로젝트에 따라서 다를 수 있음.<br>Internet Explorer / Firefox / Mac Safari / Opera / Chrome</li>
+						</ul>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">03. 문서 제작시 기본 문서</p>
+						<ul class="vertical_cont_copy_list">
+							<li><a href="layout.html" class="copy_link">layout.html</a></li>
+						</ul>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">04. 각 태그의 어트리뷰트 속성들에 값들은 항상 "(따옴표)를 사용합니다.</p>
+						<ul class="vertical_cont_copy_list">
+							<li>td class=a → (X)</li>
+							<li>td class="a" → (O)</li>
+							<li>a href=a → (X)</li>
+							<li>a href="a" → (O)</li>
+							<li>div id=a → (X)</li>
+							<li>div id="a" → (O)</li>
+						</ul>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">05. HTML 주석</p>
+						<ul class="vertical_cont_copy_list">
+							<li>단락의 처음과 끝 영역에 대하여 간략한 설명과 같이 적어 놓습니다.<br>
+								예) &lt;!-- gnb --&gt; 내용 &lt;!-- //gnb --&gt; , &lt;!-- contents --&gt; 내용
+								&lt;!-- //contents --&gt;
+							</li>
+							<li>
+								수정주석은 수정된 단락의 처음부분과 끝나는 부분에 주석을 적어 놓습니다. 끝나는 부분의 주석은 // 처리를 하여 끝부분임을 알려줍니다.<br>
+								<div class="exmp">예) &lt;!-- YYMMDD_수정 --&gt; 내용 &lt;!-- //YYMMDD_수정 --&gt;</div>
+							</li>
+							<li>
+								한줄만 수정되는 간략한 경우는 해당태그 맨끝에 공백(스페이스)후 주석을 넣어줍니다.<br>
+								<div class="exmp">&lt;p&gt;hellow world!&lt;/p&gt; &lt;!-- YYMMDD_수정 --&gt;</div>
 							</li>
 						</ul>
 					</div>

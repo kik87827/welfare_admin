@@ -30,6 +30,13 @@ header, footer, section, article, aside, nav, main, details, menu, figure, figca
   display: block;
 }
 
+xmp {
+  font-family: "Pretendard", Dotum, verdana, sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
