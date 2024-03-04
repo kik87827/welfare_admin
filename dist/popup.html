@@ -28,7 +28,7 @@
 			<div class="bg_dim"></div>
 			<div class="popup_item">
 				<div class="popup_title_row">
-					<h3 class="popup_title">업종코드 검색</h3>
+					<h3 class="popup_title">주소찾기</h3>
 				</div>
 				<div class="popup_contents_row">
 					내용이 들어갑니다.<br>
@@ -43,9 +43,9 @@
 					내용이 들어갑니다.<br>
 					내용이 들어갑니다.
 				</div>
-				<div class="popup_btn_row">
-					<a href="#" class="btn_box size_submit close_trigger"><span class="btn_box_text">닫기</span></a>
-				</div>
+				<!-- <div class="popup_btn_row">
+                        <a href="#" class="btn_box size_submit close_trigger"><span class="btn_box_text">닫기</span></a>
+                    </div> -->
 				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 			</div>
 		</div>
@@ -61,9 +61,7 @@
 					callback() {
 
 					},
-					closeCallback() {
-						document.querySelector("#btnCall").focus(); // 접근성 키보드 이슈로 이벤트 발생 버튼에 포커스
-					}
+					closeCallback() {}
 				});
 
 				designPopup.popupShow(); // show

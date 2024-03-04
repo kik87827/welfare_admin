@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html')
+<body class="front_body">
+    <div class="page_wrap">
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
+            </div>
+        </header>
+        <section class="middle_wrap sub_wrap">
+            <div class="sub_title_wrap">
+                <h2 class="sub_title">권한 관리</h2>
+                <div class="breadcrump_list_wrap">
+                    <ul class="breadcrump_list">
+                        <li><a href="#" class="breadcrump_menu">홈</a></li>
+                        <li><a href="#" class="breadcrump_menu">시스템 관리</a></li>
+                        <li><a href="#" class="breadcrump_menu">권한 관리</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_contents_wrap sub_template">
+                <div class="sub_left_cols">
+                    @@include('./include/_left.html')
+                </div>
+                <div class="sub_right_cols">
+                    내용이 들어갑니다.
+                </div>
+            </div>
+        </section>
+        <!-- popup -->
+        <div class="popup_wrap" id="codePopup">
+            <div class="bg_dim"></div>
+            <div class="popup_item">
+                <div class="popup_title_row">
+                    <h3 class="popup_title">코드등록</h3>
+                </div>
+                <div class="popup_contents_row">
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.<br>
+                    내용이 들어갑니다.
+                </div>
+                <div class="popup_btn_row">
+                    <a href="#" class="btn_box size_submit primary close_trigger"><span class="btn_box_text">등록</span></a><!-- close_trigger 닫기 --> 
+                    <a href="#" class="btn_box size_submit skin2 close_trigger"><span class="btn_box_text">취소</span></a><!-- close_trigger 닫기 --> 
+                </div>
+                <a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+            </div>
+        </div>
+        <!-- // popup -->
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+                rockMenu("#nav_system, #left_system");
+                // 인스턴스 선언
+                let codePopup = new DesignPopup({
+                    selector: "#codePopup",
+                    beforeCallback(){
+
+                    },
+                    callback(){
+
+                    },
+                    closeCallback(){
+                    }
+                });
+                // 퍼블확인용
+                let url = window.location.href.split('?')[1];
+                let url_2 = url !== undefined ? url.split('#')[0] : null;
+                if(url_2 === "popup_01"){
+                    codePopup.popupShow(); // show
+                    // codePopup.popupShow(); // hide
+                }
+            });
+
+        </script>
+    </div>
+</body>
+</html>
