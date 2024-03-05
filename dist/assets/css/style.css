@@ -5216,6 +5216,90 @@ input.input_form_field {
   word-break: keep-all;
 }
 
+.form_count_render {
+  text-align: center;
+  padding: 20px;
+}
+
+.form_count_para {
+  font-size: 24px;
+  color: #333333;
+}
+.form_count_para strong {
+  font-weight: 500;
+  color: #0CA99F;
+  font-family: "Rubik Medium", "Pretendard", dotum;
+}
+
+.quad_box_list > li {
+  margin-bottom: 16px;
+}
+.quad_box_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.quad_box {
+  display: block;
+  border: 1px solid #EEEEEE;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.quad_primay_number {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFC35E;
+}
+
+.quad_detail_row {
+  margin-top: 8px;
+}
+
+.quad_detail_tb {
+  display: table;
+  width: 100%;
+}
+
+.quad_detail_tr {
+  display: table-row;
+}
+.quad_detail_tr:last-of-type .quad_detail_cell {
+  padding-bottom: 0;
+}
+
+.quad_detail_cell {
+  display: table-cell;
+  vertical-align: top;
+  padding-bottom: 8px;
+}
+.quad_detail_cell.define_th {
+  width: 1px;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+.quad_detail_cell.define_td {
+  padding-top: 4px;
+}
+
+.quad_detail_key {
+  display: block;
+  text-align: center;
+  padding: 6px 12px;
+  background: #0CA99F;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 12px;
+}
+.quad_detail_key.primary {
+  background: #208A83;
+}
+
+.quad_detail_value {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+
 .page_wrap.guide {
   background: #fff;
 }
