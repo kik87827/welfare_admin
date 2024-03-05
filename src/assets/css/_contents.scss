@@ -90,7 +90,14 @@ input.cform_input{height:48px;font-size:16px;font-weight:500;line-height:1;appea
 }
 
 
-.board_field_container{background:#E0F6F3;border-radius:12px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);padding:24px;margin-bottom:40px;display:flex;gap:24px;}
+.board_field_container{background:#E0F6F3;border-radius:12px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);padding:24px;margin-bottom:40px;display:flex;gap:24px;
+    &.type2{display:block;
+        > .board_each_box_wrap{
+            margin-bottom:24px;
+            &:last-of-type{margin-bottom:0;}
+        }
+    }
+}
 .board_form_cols{flex:1;min-width:0;display:flex;gap:24px;}
 .board_btn_cols{flex:0 0 120px;display:flex;flex-direction: column;gap:16px;}
 
@@ -115,6 +122,9 @@ input.cform_input{height:48px;font-size:16px;font-weight:500;line-height:1;appea
     &.type2{
         display:flex;flex-direction: column;align-items: center; justify-content: center;
         > *{width:100%;}
+    }
+    &.short{
+        flex:0 0 225px;
     }
 }
 .board_eash_else{flex:0 0 16px;padding:6px 0;white-space: nowrap;text-align: center; display:flex; align-items: center;justify-content: center;font-size:14px;color:$primary;}
@@ -141,6 +151,7 @@ input.board_input{font-size:18px;line-height:1; box-sizing:border-box;height:24p
         min-height:54px; background-color:$secondary;
         .btn_board_submit_text{font-size:18px;}
     }
+    &.long_type2{flex:1;}
 }
 .btn_board_submit_text{font-size:20px;color:#fff;line-height:1;}
 
@@ -282,6 +293,9 @@ table.list_table{
     &.short_wid3{
         flex:0 0 415px;
     }
+    &.short_wid4{
+        flex:0 0 503px;
+    }
     &.type2{
         border-color:$primary;
         .box_brick_key{
@@ -291,21 +305,33 @@ table.list_table{
     &.render_type2{
         display:flex;
     }
+    &.gap_type2{gap:12px;}
+    &.ptype2{padding:16px;}
     &.disabled{
         background:#eee; border-color:#eee;
         .box_brick_key{color:#999;}
     }
 }
+.box_brick_long_panel{flex:1;min-width:0;}
+.box_brick_short_panel{flex:0 0 120px;min-width:0;display:flex;flex-direction: column;gap:16px;}
+.box_brick_inner{padding:16px;height:100%;box-sizing: border-box;display:flex; flex-direction: column;}
 .box_brick_key_row{
     min-height:24px;display:flex;justify-content:space-between;align-items:center;padding:11px 15px 0 15px;
     .box_marker_flag{}
-
+}
+.box_brick_title_row{
+    min-height:24px;display:flex;justify-content:space-between;align-items:center;padding:0 0 10px 0;
+    .box_marker_flag{}
 }
 .box_brick_key{font-size:14px;color:#999999;font-weight:600;}
-.box_brick_value_row{margin-top:6px;padding:0 15px 15px 15px;}
+.box_brick_title{font-size:20px;color:$primary; font-weight:700;}
+.box_brick_value_row{margin-top:6px;padding:0 15px 15px 15px;
+    &.question_vitem_wrap{padding:0;}
+}
 
 .box_brick_data{
     font-size:18px;font-weight:500;line-height:1.3;
+    &.number{@include rubik;line-height:1;}
     &.type2{color:#bbb;}
     &.getdata_board_render{}
 }
@@ -329,6 +355,13 @@ table.list_table{
 .box_brick_data_group{display:flex;justify-content: space-between;gap:20px;}
 .data_liquid_cols{}
 .data_short_cols{display:flex;align-items: flex-end;}
+
+.box_tree_container{border-radius:8px;padding:16px;flex:1; min-height:0;box-sizing: border-box;border:1px solid $primary;
+   position:relative;overflow:hidden;overflow-y:auto; max-height:193px;
+   &::-webkit-scrollbar {width: 12px !important;}
+   &::-webkit-scrollbar-thumb {background-color: $primary !important;border-radius: 10px;background-clip: padding-box;border: 4px solid transparent !important;}
+   &::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 4px transparent !important;}
+}
 
 .file_item_list{
     > li{
@@ -368,11 +401,11 @@ table.list_table{
 
 .question_vitem_wrap{}
 .question_vitem{
-    border:1px solid #ddd; margin-bottom:12px;padding:12px 16px 0;
+    border:1px solid #ddd; margin-bottom:13px;padding:12px 16px 0;
     border-radius:8px;
     &:last-of-type{margin-bottom:0;}
 }
-.question_label{font-size:16px;color:#999999;font-weight:600;line-height:1; letter-spacing: -0.05em;}
+.question_label{font-size:14px;color:#999999;font-weight:600;line-height:1; letter-spacing: -0.05em;}
 .question_form{
     > input.form_input{height:40px;}
 }
@@ -494,3 +527,77 @@ table.list_table{
     display:flex; justify-content: center; text-align: center; margin-top:32px;
     .props_item{}
 }
+
+/* tree */
+.tree_item_list_wrap{
+    margin-bottom:15px;
+    &:last-of-type{margin-bottom:0;}
+}
+.tree_global_user_row{
+    margin-bottom:15px;
+}
+
+.tree_global_user_item{
+    display:flex; gap:4px;
+}
+
+.ico_tree_user{
+    display:block;width:28px;height:28px;background:url("../images/ico_tree_men.svg") no-repeat 50% 50%/100% auto; border-radius:100%;
+}
+
+.text_tree_user{
+    font-size:20px; font-weight:600; color:$primary; display:block;padding-top:2px;
+}
+
+.tree_item_list{
+    margin-left:20px;
+    >li{
+        margin-bottom:12px; display:none;
+        &.active{display:block;
+            > .tree_item{
+                .ico_tree{background-image:url("../images/ico_tree_folder.svg")}
+                .tree_parag{color:$primary;}
+            }
+        }
+        &:last-of-type{margin-bottom:0;}
+    }
+}
+
+.tree_item{display:flex;gap:6px;}
+
+.ico_tree{display:block;width:24px;height:24px;background:url("../images/ico_tree_folder2.svg") no-repeat 0 0/100% auto;}
+.tree_parag{font-size:16px; color:#333; font-weight:500;padding-top:1px;}
+
+.tree_menu_list_wrap{
+    background:#eee; border-radius:8px; margin-top:6px;
+}
+
+.tree_depth_list{padding:12px 20px; display:inline-block;
+    > li{
+        margin-bottom:12px;
+        &.active{
+            > .tree_item{
+                .ico_tree{background-image:url("../images/ico_tree_folder.svg")}
+                .tree_parag{color:$primary;}
+            }
+            > .tree_menu{
+                .tree_menu_text{color:$primary;}
+            }
+        }
+        &:last-of-type{margin-bottom:0;}
+    }
+}
+.tree_menu_list{
+    padding:12px 16px;
+    > li{
+        margin-bottom:12px;
+        &.active{
+            .tree_menu_text{color:$primary;}
+        }
+        &:last-of-type{margin-bottom:0;}
+    }
+}
+
+.tree_menu{display:flex;gap:6px;}
+.ico_tree_delete{display:block;width:18px;height:18px;background:url("../images/ico_tree_delete.svg") no-repeat 0 0/100% auto;}
+.tree_menu_text{font-size:16px; color:#333; font-weight:500;position:relative;top:-1px;}
