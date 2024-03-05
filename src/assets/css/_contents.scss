@@ -296,6 +296,9 @@ table.list_table{
     &.short_wid4{
         flex:0 0 503px;
     }
+    &.short_wid5{
+        flex:0 0 604px;
+    }
     &.type2{
         border-color:$primary;
         .box_brick_key{
@@ -358,6 +361,7 @@ table.list_table{
 
 .box_tree_container{border-radius:8px;padding:16px;flex:1; min-height:0;box-sizing: border-box;border:1px solid $primary;
    position:relative;overflow:hidden;overflow-y:auto; max-height:193px;
+   &.htype2{max-height:100%;}
    &::-webkit-scrollbar {width: 12px !important;}
    &::-webkit-scrollbar-thumb {background-color: $primary !important;border-radius: 10px;background-clip: padding-box;border: 4px solid transparent !important;}
    &::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 4px transparent !important;}
@@ -403,11 +407,16 @@ table.list_table{
 .question_vitem{
     border:1px solid #ddd; margin-bottom:13px;padding:12px 16px 0;
     border-radius:8px;
+    &.type2{display:flex;gap:16px; align-items: center;padding:12px 16px}
     &:last-of-type{margin-bottom:0;}
 }
+.question_long_cols{flex:1;margin-bottom:-12px;}
+.question_short_cols{flex:0 0 110px;}
 .question_label{font-size:14px;color:#999999;font-weight:600;line-height:1; letter-spacing: -0.05em;}
 .question_form{
     > input.form_input{height:40px;}
+    .form_textarea_wrap{margin:10px 0;}
+    > .props_item_group{padding:12px 0;}
 }
 .btn_formbox_submit_wrap{margin-top:16px;}
 .btn_formbox_submit{display:flex;min-height:54px; box-sizing: border-box;gap:6px;
@@ -601,3 +610,10 @@ table.list_table{
 .tree_menu{display:flex;gap:6px;}
 .ico_tree_delete{display:block;width:18px;height:18px;background:url("../images/ico_tree_delete.svg") no-repeat 0 0/100% auto;}
 .tree_menu_text{font-size:16px; color:#333; font-weight:500;position:relative;top:-1px;}
+
+
+.btn_box_flex_wrap{display:flex;gap:16px;margin-top:16px;}
+.btn_box_flex_cols{
+    flex:1; display:flex; justify-content: center; gap:15px;
+    &.short_wid5{flex:0 0 604px;}
+}

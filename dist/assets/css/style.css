@@ -3451,6 +3451,16 @@ input.props_form[type=radio] + .props_label {
   height: 20px;
   background-image: url("../images/ico_box_01.svg");
 }
+.ico_btn_box.save {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ico_box_02.svg");
+}
+.ico_btn_box.reset {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ico_box_03.svg");
+}
 .ico_btn_box.delete {
   width: 24px;
   height: 24px;
@@ -3595,6 +3605,7 @@ textarea.form_textarea {
   height: 395px;
   padding: 0;
   box-sizing: border-box;
+  resize: none;
   border: 0;
   font-size: 18px;
   line-height: 1;
@@ -3603,6 +3614,12 @@ textarea.form_textarea {
 }
 textarea.form_textarea.size2 {
   height: 60px;
+}
+textarea.form_textarea.size3 {
+  height: 100px;
+}
+textarea.form_textarea.size4 {
+  height: 260px;
 }
 
 /* contents */
@@ -4414,6 +4431,9 @@ table.list_table tbody td.nodata_td {
 .box_brick.short_wid4 {
   flex: 0 0 503px;
 }
+.box_brick.short_wid5 {
+  flex: 0 0 604px;
+}
 .box_brick.type2 {
   border-color: #208A83;
 }
@@ -4549,6 +4569,9 @@ table.list_table tbody td.nodata_td {
   overflow-y: auto;
   max-height: 193px;
 }
+.box_tree_container.htype2 {
+  max-height: 100%;
+}
 .box_tree_container::-webkit-scrollbar {
   width: 12px !important;
 }
@@ -4649,8 +4672,23 @@ table.list_table tbody td.nodata_td {
   padding: 12px 16px 0;
   border-radius: 8px;
 }
+.question_vitem.type2 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 16px;
+}
 .question_vitem:last-of-type {
   margin-bottom: 0;
+}
+
+.question_long_cols {
+  flex: 1;
+  margin-bottom: -12px;
+}
+
+.question_short_cols {
+  flex: 0 0 110px;
 }
 
 .question_label {
@@ -4663,6 +4701,12 @@ table.list_table tbody td.nodata_td {
 
 .question_form > input.form_input {
   height: 40px;
+}
+.question_form .form_textarea_wrap {
+  margin: 10px 0;
+}
+.question_form > .props_item_group {
+  padding: 12px 0;
 }
 
 .btn_formbox_submit_wrap {
@@ -5086,6 +5130,22 @@ table.list_table tbody td.nodata_td {
   font-weight: 500;
   position: relative;
   top: -1px;
+}
+
+.btn_box_flex_wrap {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn_box_flex_cols {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.btn_box_flex_cols.short_wid5 {
+  flex: 0 0 604px;
 }
 
 .page_wrap.guide {

@@ -122,6 +122,8 @@ input.props_form{
 .ico_btn_box{
     background-size:100% auto; background-repeat:no-repeat; background-position:50% 50%;
     &.add{width:20px;height:20px;background-image:url("../images/ico_box_01.svg");}
+    &.save{width:24px;height:24px;background-image:url("../images/ico_box_02.svg");}
+    &.reset{width:24px;height:24px;background-image:url("../images/ico_box_03.svg");}
     &.delete{width:24px;height:24px;background-image:url("../images/ico_box_05.svg");}
 }
 .btn_box_text{font-size:16px;color:#fff;line-height:1;display:inline-block;font-weight:600;}
@@ -177,6 +179,8 @@ input.form_input{font-size:18px;line-height:1; box-sizing:border-box;height:24px
 }
 
 .form_textarea_wrap{}
-textarea.form_textarea{vertical-align: top;width:100%;height:395px;padding:0;box-sizing: border-box;border:0;font-size:18px;line-height:1;color:#0F2139;font-weight:600;
+textarea.form_textarea{vertical-align: top;width:100%;height:395px;padding:0;box-sizing: border-box;resize:none;border:0;font-size:18px;line-height:1;color:#0F2139;font-weight:600;
     &.size2{height:60px;}
+    &.size3{height:100px;}
+    &.size4{height:260px;}
 }
