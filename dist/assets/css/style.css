@@ -410,6 +410,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   justify-content: center;
   align-items: center;
 }
+.page_wrap.main_wrap {
+  overflow-x: hidden;
+}
 .page_wrap.main_wrap .hgroup_wrap, .page_wrap.main_wrap .middle_wrap {
   max-width: 1400px;
 }
@@ -4245,6 +4248,7 @@ table.list_table tbody td.nodata_td {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.3;
+  height: 63px;
 }
 
 .board_data_else_obj {

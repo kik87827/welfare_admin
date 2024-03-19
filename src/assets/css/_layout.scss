@@ -16,6 +16,7 @@ body{}
     }
     &.main_wrap{
         .hgroup_wrap, .middle_wrap{max-width:1400px;}
+        overflow-x:hidden;
     }
 }
 .center_form_inner{padding:60px 30px;}
