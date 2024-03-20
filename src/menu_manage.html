@@ -43,14 +43,14 @@
                                         </div>
                                     </div>
                                     <ul class="tree_item_list">
-                                        <li class="active">
+                                        <li>
                                             <a href="#" class="tree_item"><i class="ico_tree"></i><span class="tree_parag">알림 관리</span></a>
                                             <ul class="tree_depth_list">
                                                 <li>
                                                     <a href="#" class="tree_item"><i class="ico_tree"></i><span class="tree_parag">알림 관리</span></a>
                                                     <div class="tree_menu_list_wrap">
                                                         <ul class="tree_menu_list">
-                                                            <li class="active">
+                                                            <li>
                                                                 <a href="#" class="tree_menu"><i class="ico_tree_delete"></i><span class="tree_menu_text">알림 가이드 등록</span></a>
                                                             </li>
                                                             <li>
@@ -59,7 +59,38 @@
                                                         </ul>
                                                     </div>
                                                 </li>
-                                                <li class="active">
+                                                <li>
+                                                    <a href="#" class="tree_item"><i class="ico_tree"></i><span class="tree_parag">알림 관리</span></a>
+                                                    <div class="tree_menu_list_wrap">
+                                                        <ul class="tree_menu_list">
+                                                            <li>
+                                                                <a href="#" class="tree_menu"><i class="ico_tree_delete"></i><span class="tree_menu_text">알림 가이드 등록</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="tree_menu"><i class="ico_tree_delete"></i><span class="tree_menu_text">알림 가이드 등록</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="tree_item"><i class="ico_tree"></i><span class="tree_parag">알림 관리 02</span></a>
+                                            <ul class="tree_depth_list">
+                                                <li>
+                                                    <a href="#" class="tree_item"><i class="ico_tree"></i><span class="tree_parag">알림 관리</span></a>
+                                                    <div class="tree_menu_list_wrap">
+                                                        <ul class="tree_menu_list">
+                                                            <li>
+                                                                <a href="#" class="tree_menu"><i class="ico_tree_delete"></i><span class="tree_menu_text">알림 가이드 등록</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="tree_menu"><i class="ico_tree_delete"></i><span class="tree_menu_text">알림 가이드 등록</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
                                                     <a href="#" class="tree_item"><i class="ico_tree"></i><span class="tree_parag">알림 관리</span></a>
                                                     <div class="tree_menu_list_wrap">
                                                         <ul class="tree_menu_list">
@@ -76,6 +107,32 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <script>
+                                    $(function(){
+                                        treeUI();
+                                    });
+                                    function treeUI(){
+                                        // toggle
+                                        $(".tree_item,.tree_menu").on("click",function(e){
+                                            e.preventDefault();
+                                            var $this = $(this);
+                                            var $this_parent= $this.closest("li");
+                                            $this_parent.toggleClass("active");
+                                        });
+                                        // 파일 삭제
+                                        $(".ico_tree_delete").on("click",function(e){
+                                            e.preventDefault();
+                                            var $this = $(this);
+                                            var $this_parent = $this.closest("li");
+                                            var $this_parents_list = $this.closest(".tree_menu_list");
+                                            var $this_parents_wrap = $this.parents(".tree_menu_list_wrap");
+                                            if($this_parents_list.children("li").length==1){
+                                                $this_parents_wrap.remove();
+                                            }
+                                            $this_parent.remove();
+                                        });
+                                    }
+                                </script>
                                 <!-- // tree -->
                             </div>
                         </div>

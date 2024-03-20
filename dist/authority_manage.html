@@ -256,6 +256,33 @@
 														</li>
 													</ul>
 												</div>
+												<script>
+													$(function() {
+														treeUI();
+													});
+
+													function treeUI() {
+														// toggle
+														$(".tree_item,.tree_menu").on("click", function(e) {
+															e.preventDefault();
+															var $this = $(this);
+															var $this_parent = $this.closest("li");
+															$this_parent.toggleClass("active");
+														});
+														// 파일 삭제
+														$(".ico_tree_delete").on("click", function(e) {
+															e.preventDefault();
+															var $this = $(this);
+															var $this_parent = $this.closest("li");
+															var $this_parents_list = $this.closest(".tree_menu_list");
+															var $this_parents_wrap = $this.parents(".tree_menu_list_wrap");
+															if ($this_parents_list.children("li").length == 1) {
+																$this_parents_wrap.remove();
+															}
+															$this_parent.remove();
+														});
+													}
+												</script>
 												<!-- // tree -->
 											</div>
 											<div class="btn_box_group mtype2">

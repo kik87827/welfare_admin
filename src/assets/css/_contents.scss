@@ -561,12 +561,13 @@ table.list_table{
 .tree_item_list{
     margin-left:20px;
     >li{
-        margin-bottom:12px; display:none;
-        &.active{display:block;
+        margin-bottom:12px;
+        &.active{
             > .tree_item{
                 .ico_tree{background-image:url("../images/ico_tree_folder.svg")}
                 .tree_parag{color:$primary;}
             }
+            > .tree_depth_list{display:inline-block;}
         }
         &:last-of-type{margin-bottom:0;}
     }
@@ -578,10 +579,10 @@ table.list_table{
 .tree_parag{font-size:16px; color:#333; font-weight:500;padding-top:1px;}
 
 .tree_menu_list_wrap{
-    background:#eee; border-radius:8px; margin-top:6px;
+    background:#eee; border-radius:8px; margin-top:6px; display:none;
 }
 
-.tree_depth_list{padding:12px 20px; display:inline-block;
+.tree_depth_list{padding:12px 20px; display:none;
     > li{
         margin-bottom:12px;
         &.active{
@@ -592,6 +593,7 @@ table.list_table{
             > .tree_menu{
                 .tree_menu_text{color:$primary;}
             }
+            > .tree_menu_list_wrap{display:block;}
         }
         &:last-of-type{margin-bottom:0;}
     }
@@ -608,7 +610,7 @@ table.list_table{
 }
 
 .tree_menu{display:flex;gap:6px;}
-.ico_tree_delete{display:block;width:18px;height:18px;background:url("../images/ico_tree_delete.svg") no-repeat 0 0/100% auto;}
+.ico_tree_delete{display:block;width:18px;height:18px;background:url("../images/ico_tree_delete.svg") no-repeat 0 0/100% auto;cursor: pointer;}
 .tree_menu_text{font-size:16px; color:#333; font-weight:500;position:relative;top:-1px;}
 
 

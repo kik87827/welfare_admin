@@ -5049,16 +5049,15 @@ table.list_table tbody td.nodata_td {
 }
 .tree_item_list > li {
   margin-bottom: 12px;
-  display: none;
-}
-.tree_item_list > li.active {
-  display: block;
 }
 .tree_item_list > li.active > .tree_item .ico_tree {
   background-image: url("../images/ico_tree_folder.svg");
 }
 .tree_item_list > li.active > .tree_item .tree_parag {
   color: #208A83;
+}
+.tree_item_list > li.active > .tree_depth_list {
+  display: inline-block;
 }
 .tree_item_list > li:last-of-type {
   margin-bottom: 0;
@@ -5087,11 +5086,12 @@ table.list_table tbody td.nodata_td {
   background: #eee;
   border-radius: 8px;
   margin-top: 6px;
+  display: none;
 }
 
 .tree_depth_list {
   padding: 12px 20px;
-  display: inline-block;
+  display: none;
 }
 .tree_depth_list > li {
   margin-bottom: 12px;
@@ -5104,6 +5104,9 @@ table.list_table tbody td.nodata_td {
 }
 .tree_depth_list > li.active > .tree_menu .tree_menu_text {
   color: #208A83;
+}
+.tree_depth_list > li.active > .tree_menu_list_wrap {
+  display: block;
 }
 .tree_depth_list > li:last-of-type {
   margin-bottom: 0;
@@ -5132,6 +5135,7 @@ table.list_table tbody td.nodata_td {
   width: 18px;
   height: 18px;
   background: url("../images/ico_tree_delete.svg") no-repeat 0 0/100% auto;
+  cursor: pointer;
 }
 
 .tree_menu_text {
