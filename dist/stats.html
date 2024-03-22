@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=1280" />
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/moment.min.js"></script>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/daterangepicker.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-ui.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<title>복지위기 알림서비스 관리시스템</title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_wrap">
+			<div class="hgroup_wrap">
+				<div class="hgroup_util_block">
+					<ul class="hgroup_util_list">
+						<li>
+							<p class="util_login_copy"><strong>유상욱님</strong> 로그인하였습니다.</p>
+						</li>
+						<li>
+							<div class="util_login_obj">
+								<span class="util_login_key">마지막 로그인</span>
+								<span class="util_login_value">2024-01-08 09:01</span>
+							</div>
+						</li>
+						<li><a href="#" class="btn_login_box">로그아웃</a></li>
+					</ul>
+				</div>
+				<div class="hgroup_main_block">
+					<h1 class="hgroup_toplogo"><a href="#" class="hgroup_toplogo_link"><img src="./assets/images/header_toplogo.png" alt="복지위기 알림서비스 관리시스템"></a></h1>
+					<nav class="nav_item_wrap">
+						<ul class="nav_item_list">
+							<li><a href="#" class="nav_item" id="nav_report"><span class="nav_item_text">신고 관리</span></a></li>
+							<li><a href="#" class="nav_item" id="nav_app_member"><span class="nav_item_text">APP회원 관리</span></a></li>
+							<li><a href="#" class="nav_item" id="nav_contents"><span class="nav_item_text">콘텐츠 관리</span></a></li>
+							<li><a href="#" class="nav_item" id="nav_stats"><span class="nav_item_text">통계 관리</span></a></li>
+
+							<li><a href="#" class="nav_item" id="nav_member"><span class="nav_item_text">회원 관리</span></a></li>
+
+							<li><a href="#" class="nav_item" id="nav_my"><span class="nav_item_text">마이페이지</span></a></li>
+
+							<li><a href="#" class="nav_item" id="nav_system"><span class="nav_item_text">시스템 관리</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="middle_wrap sub_wrap">
+			<div class="sub_title_wrap">
+				<h2 class="sub_title">알림 유형별 통계</h2>
+				<div class="breadcrump_list_wrap">
+					<ul class="breadcrump_list">
+						<li><a href="#" class="breadcrump_menu">홈</a></li>
+						<li><a href="#" class="breadcrump_menu">통계관리</a></li>
+						<li><a href="#" class="breadcrump_menu">알림 유형별 통계</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub_contents_wrap sub_template">
+				<div class="sub_left_cols">
+					<div class="sub_left_menu_box">
+						<ul class="sub_left_menu_list">
+							<li id="left_report">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">신고관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_app_member">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">App 회원 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">App 회원 관리</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">App 회원 탈퇴 관리</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_contents">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">콘텐츠 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">공지사항 관리</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">설문조사 관리</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_stats">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">통계 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">알림주체별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">순위별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고유형별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고의무자별 통계</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">신고접수처별 통계</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_link">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">연계 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_member">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">회원 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 01</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">하위 메뉴 02</span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="left_system">
+								<a href="javascript:;" class="left_menu_one"><span class="left_menu_one_text">시스템 관리</span></a>
+								<div class="left_menu_two_wrap">
+									<ul class="left_menu_two_list">
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">권한 관리</span></a></li>
+										<li><a href="#" class="left_menu_two"><span class="left_menu_two_text">메뉴 관리</span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub_right_cols">
+					<div class="sub_cont_block_wrap">
+						<div class="sub_cont_block">
+							<div class="sub_cont_key_row">
+								<p class="sub_cont_key">통계관리 – 알림 유형별 통계</p>
+							</div>
+							<div class="sub_cont_value_row">
+								<div class="board_field_container">
+									<div class="board_form_cols type2">
+										<div class="board_each_box_wrap">
+											<div class="board_each_box">
+												<div class="board_label_row">
+													<p class="board_label">구분</p>
+												</div>
+												<div class="board_form_row">
+													<div class="props_item_group">
+														<div class="props_item">
+															<input type="radio" class="props_form" name="division" id="division_01">
+															<label for="division_01" class="props_label">알림 현황</label>
+														</div>
+														<div class="props_item">
+															<input type="radio" class="props_form" name="division" id="division_02">
+															<label for="division_02" class="props_label">알림 유형별 통계</label>
+														</div>
+														<div class="props_item">
+															<input type="radio" class="props_form" name="division" id="division_03">
+															<label for="division_03" class="props_label">신고의무자별</label>
+														</div>
+														<div class="props_item">
+															<input type="radio" class="props_form" name="division" id="division_04">
+															<label for="division_04" class="props_label">지역사회보장협의체 및 명예사회복지공무원</label>
+														</div>
+														<div class="props_item">
+															<input type="radio" class="props_form" name="division" id="division_05">
+															<label for="division_05" class="props_label">알림접수처별</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="board_each_box_wrap">
+											<div class="board_each_box">
+												<div class="board_label_row">
+													<p class="board_label">시도별</p>
+												</div>
+												<div class="board_form_row">
+													<select class="board_select">
+														<option>전체</option>
+													</select>
+												</div>
+											</div>
+											<div class="board_each_box">
+												<div class="board_label_row">
+													<p class="board_label">날짜 설정</p>
+												</div>
+												<div class="board_form_row">
+													<input type="text" class="daterange" id="date_start" value="2024-01-02" />
+												</div>
+											</div>
+											<div class="board_each_box">
+												<div class="board_label_row">
+													<p class="board_label vhidden">날짜 설정</p>
+												</div>
+												<div class="board_form_row">
+													<input type="text" class="daterange" id="date_end" value="2024-02-07" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="board_btn_cols">
+										<a href="#" class="btn_board_submit long_type2"><span class="btn_board_submit_text">검색</span></a>
+										<a href="#" class="btn_board_submit type2"><span class="btn_board_submit_text">초기화</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub_cont_block">
+							<div class="sub_cont_key_row">
+								<p class="sub_cont_key">시도(전체)알림유형별 현황</p>
+							</div>
+							<div class="sub_cont_value_row">
+								<div class="cont_card">
+									<div class="chart_render_container">
+										<div class="chart_render">
+											<div style="display:flex;align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
+												chart 영역
+											</div>
+										</div>
+										<div class="chart_guide_item_wrap">
+											<div class="chart_guide_item">
+												<span class="chart_guide_flag" style="background-color:#0CA99F"></span>
+												<span class="chart_guide_text">전체</span>
+											</div>
+											<div class="chart_guide_item">
+												<span class="chart_guide_flag" style="background-color:#FEB700"></span>
+												<span class="chart_guide_text">본인, 이웃 신고</span>
+											</div>
+											<div class="chart_guide_item">
+												<span class="chart_guide_flag" style="background-color:#F65742"></span>
+												<span class="chart_guide_text">신고 의무자</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub_cont_block">
+							<div class="sub_cont_key_row">
+								<p class="sub_cont_key">시도별 알림유형 현황</p>
+							</div>
+							<div class="sub_cont_value_row">
+								<div class="cont_card">
+									<div class="data_display_container">
+										<div class="data_display_item">
+											<div class="data_display_top_row">
+												<p class="data_display_title">전체 알림</p>
+											</div>
+											<div class="data_display_main_row">
+												<table class="data_display_tb">
+													<thead>
+														<tr>
+															<th><span class="data_display_thtext">알림</span></th>
+															<th><span class="data_display_thtext">상담</span></th>
+															<th><span class="data_display_thtext">완료</span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td colspan="3"><span class="data_display_tdtext">~</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="data_display_item">
+											<div class="data_display_top_row">
+												<p class="data_display_title">본인, 이웃 알림</p>
+											</div>
+											<div class="data_display_main_row">
+												<table class="data_display_tb">
+													<thead>
+														<tr>
+															<th><span class="data_display_thtext">알림</span></th>
+															<th><span class="data_display_thtext">상담</span></th>
+															<th><span class="data_display_thtext">완료</span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td colspan="3"><span class="data_display_tdtext">~</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="data_display_item">
+											<div class="data_display_top_row">
+												<p class="data_display_title">신고 의무자</p>
+											</div>
+											<div class="data_display_main_row">
+												<table class="data_display_tb">
+													<thead>
+														<tr>
+															<th><span class="data_display_thtext">알림</span></th>
+															<th><span class="data_display_thtext">상담</span></th>
+															<th><span class="data_display_thtext">완료</span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td colspan="3"><span class="data_display_tdtext">~</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+														<tr>
+															<td><span class="data_display_tdtext">112</span></td>
+															<td><span class="data_display_tdtext">97</span></td>
+															<td><span class="data_display_tdtext">89</span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				rockMenu("#nav_stats, #left_stats");
+			});
+
+			$(function() {
+				datePickerCall(
+					"#date_start,#date_end", {
+						singleDatePicker: true,
+						autoUpdateInput: true,
+						elseMent: "날짜 설정",
+						locale: {
+							format: 'YYYY-MM-DD',
+							"daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+							"monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+							applyLabel: "적용"
+						}
+					}
+				)
+			});
+		</script>
+	</div>
+</body>
+
+</html>

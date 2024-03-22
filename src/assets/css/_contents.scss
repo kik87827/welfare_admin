@@ -98,7 +98,14 @@ input.cform_input{height:48px;font-size:16px;font-weight:500;line-height:1;appea
         }
     }
 }
-.board_form_cols{flex:1;min-width:0;display:flex;gap:24px;}
+.board_form_cols{flex:1;min-width:0;display:flex;gap:24px;
+    &.type2{display:block;
+        > .board_each_box_wrap{
+            margin-bottom:24px;
+            &:last-of-type{margin-bottom:0;}
+        }
+    }
+}
 .board_btn_cols{flex:0 0 120px;display:flex;flex-direction: column;gap:16px;}
 
 .board_form_inner_cols{flex:1; min-width:0; }
@@ -151,7 +158,7 @@ input.board_input{font-size:18px;line-height:1; box-sizing:border-box;height:24p
         min-height:54px; background-color:$secondary;
         .btn_board_submit_text{font-size:18px;}
     }
-    &.long_type2{flex:1;}
+    &.long_type2{flex:1;max-height:200px;}
 }
 .btn_board_submit_text{font-size:20px;color:#fff;line-height:1;}
 
@@ -360,7 +367,7 @@ table.list_table{
 .data_short_cols{display:flex;align-items: flex-end;}
 
 .box_tree_container{border-radius:8px;padding:16px;flex:1; min-height:0;box-sizing: border-box;border:1px solid $primary;
-   position:relative;overflow:hidden;overflow-y:auto; max-height:193px;
+   position:relative;overflow:hidden;overflow-y:auto; max-height:193px; min-height:600px;
    &.htype2{max-height:100%;}
    &::-webkit-scrollbar {width: 12px !important;}
    &::-webkit-scrollbar-thumb {background-color: $primary !important;border-radius: 10px;background-clip: padding-box;border: 4px solid transparent !important;}
@@ -673,3 +680,33 @@ input.input_form_field{border:0;font-size:18px;padding:0 16px;height:54px;appear
 }
 
 .quad_detail_value{font-size:16px;color:#000000; font-weight:500;}
+
+
+.cont_card{border-radius: 12px; padding:16px; background:#fff;}
+
+.chart_render_container{}
+.chart_render{}
+
+.chart_guide_item_wrap{}
+.chart_guide_item{}
+.chart_guide_flag{}
+.chart_guide_text{}
+
+.data_display_container{}
+.data_display_item{}
+.data_display_top_row{}
+.data_display_title{}
+
+.data_display_main_row{}
+.data_display_tb{
+    thead{
+        th{
+            &:last-of-type{}
+        }
+    }
+    tbody{
+        td{
+            &:last-of-type{}
+        }
+    }
+}

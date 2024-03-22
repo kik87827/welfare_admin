@@ -3899,6 +3899,15 @@ input.cform_input:focus {
   display: flex;
   gap: 24px;
 }
+.board_form_cols.type2 {
+  display: block;
+}
+.board_form_cols.type2 > .board_each_box_wrap {
+  margin-bottom: 24px;
+}
+.board_form_cols.type2 > .board_each_box_wrap:last-of-type {
+  margin-bottom: 0;
+}
 
 .board_btn_cols {
   flex: 0 0 120px;
@@ -4072,6 +4081,7 @@ input.board_input {
 }
 .btn_board_submit.long_type2 {
   flex: 1;
+  max-height: 200px;
 }
 
 .btn_board_submit_text {
@@ -4578,6 +4588,7 @@ table.list_table tbody td.nodata_td {
   overflow: hidden;
   overflow-y: auto;
   max-height: 193px;
+  min-height: 600px;
 }
 .box_tree_container.htype2 {
   max-height: 100%;
@@ -5306,6 +5317,12 @@ input.input_form_field {
   font-size: 16px;
   color: #000000;
   font-weight: 500;
+}
+
+.cont_card {
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
 }
 
 .page_wrap.guide {

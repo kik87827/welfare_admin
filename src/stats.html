@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html')
+<body class="front_body">
+    <div class="page_wrap">
+        <header class="header_wrap">
+            <div class="hgroup_wrap">
+                @@include('./include/_util.html')
+                @@include('./include/_gnb.html',{
+                    mode : 'work'
+                })
+            </div>
+        </header>
+        <section class="middle_wrap sub_wrap">
+            <div class="sub_title_wrap">
+                <h2 class="sub_title">알림 유형별 통계</h2>
+                <div class="breadcrump_list_wrap">
+                    <ul class="breadcrump_list">
+                        <li><a href="#" class="breadcrump_menu">홈</a></li>
+                        <li><a href="#" class="breadcrump_menu">통계관리</a></li>
+                        <li><a href="#" class="breadcrump_menu">알림 유형별 통계</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub_contents_wrap sub_template">
+                <div class="sub_left_cols">
+                    @@include('./include/_left.html')
+                </div>
+                <div class="sub_right_cols">
+                    <div class="sub_cont_block_wrap">
+                        <div class="sub_cont_block">
+                            <div class="sub_cont_key_row">
+								<p class="sub_cont_key">통계관리 – 알림 유형별 통계</p>
+							</div>
+                            <div class="sub_cont_value_row">
+                                <div class="board_field_container">
+                                    <div class="board_form_cols type2">
+                                        <div class="board_each_box_wrap">
+                                            <div class="board_each_box">
+                                                <div class="board_label_row">
+                                                    <p class="board_label">구분</p>
+                                                </div>
+                                                <div class="board_form_row">
+                                                    <div class="props_item_group">
+                                                        <div class="props_item">
+                                                            <input type="radio" class="props_form" name="division" id="division_01">
+                                                            <label for="division_01" class="props_label">알림 현황</label>
+                                                        </div>
+                                                        <div class="props_item">
+                                                            <input type="radio" class="props_form" name="division" id="division_02">
+                                                            <label for="division_02" class="props_label">알림 유형별 통계</label>
+                                                        </div>
+                                                        <div class="props_item">
+                                                            <input type="radio" class="props_form" name="division" id="division_03">
+                                                            <label for="division_03" class="props_label">신고의무자별</label>
+                                                        </div>
+                                                        <div class="props_item">
+                                                            <input type="radio" class="props_form" name="division" id="division_04">
+                                                            <label for="division_04" class="props_label">지역사회보장협의체 및 명예사회복지공무원</label>
+                                                        </div>
+                                                        <div class="props_item">
+                                                            <input type="radio" class="props_form" name="division" id="division_05">
+                                                            <label for="division_05" class="props_label">알림접수처별</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="board_each_box_wrap">
+                                            <div class="board_each_box">
+                                                <div class="board_label_row">
+                                                    <p class="board_label">시도별</p>
+                                                </div>
+                                                <div class="board_form_row">
+                                                    <select class="board_select"><option>전체</option></select>
+                                                </div>
+                                            </div>
+                                            <div class="board_each_box">
+                                                <div class="board_label_row">
+                                                    <p class="board_label">날짜 설정</p>
+                                                </div>
+                                                <div class="board_form_row">
+                                                    <input type="text" class="daterange" id="date_start" value="2024-01-02" />
+                                                </div>
+                                            </div>
+                                            <div class="board_each_box">
+                                                <div class="board_label_row">
+                                                    <p class="board_label vhidden">날짜 설정</p>
+                                                </div>
+                                                <div class="board_form_row">
+                                                    <input type="text" class="daterange" id="date_end" value="2024-02-07" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="board_btn_cols">
+                                        <a href="#" class="btn_board_submit long_type2"><span class="btn_board_submit_text">검색</span></a>
+                                        <a href="#" class="btn_board_submit type2"><span class="btn_board_submit_text">초기화</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_cont_block">
+                            <div class="sub_cont_key_row">
+								<p class="sub_cont_key">시도(전체)알림유형별 현황</p>
+							</div>
+                            <div class="sub_cont_value_row">
+                                <div class="cont_card">
+                                    <div class="chart_render_container">
+                                        <div class="chart_render">
+                                            <div style="display:flex;align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
+                                                chart 영역
+                                            </div>
+                                        </div>
+                                        <div class="chart_guide_item_wrap">
+                                            <div class="chart_guide_item">
+                                                <span class="chart_guide_flag" style="background-color:#0CA99F"></span>
+                                                <span class="chart_guide_text">전체</span>
+                                            </div>
+                                            <div class="chart_guide_item">
+                                                <span class="chart_guide_flag" style="background-color:#FEB700"></span>
+                                                <span class="chart_guide_text">본인, 이웃 신고</span>
+                                            </div>
+                                            <div class="chart_guide_item">
+                                                <span class="chart_guide_flag" style="background-color:#F65742"></span>
+                                                <span class="chart_guide_text">신고 의무자</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_cont_block">
+                            <div class="sub_cont_key_row">
+								<p class="sub_cont_key">시도별 알림유형 현황</p>
+							</div>
+                            <div class="sub_cont_value_row">
+                                <div class="cont_card">
+                                    <div class="data_display_container">
+                                        <div class="data_display_item">
+                                            <div class="data_display_top_row">
+                                                <p class="data_display_title">전체 알림</p>
+                                            </div>
+                                            <div class="data_display_main_row">
+                                                <table class="data_display_tb">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><span class="data_display_thtext">알림</span></th>
+                                                            <th><span class="data_display_thtext">상담</span></th>
+                                                            <th><span class="data_display_thtext">완료</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3"><span class="data_display_tdtext">~</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="data_display_item">
+                                            <div class="data_display_top_row">
+                                                <p class="data_display_title">본인, 이웃 알림</p>
+                                            </div>
+                                            <div class="data_display_main_row">
+                                                <table class="data_display_tb">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><span class="data_display_thtext">알림</span></th>
+                                                            <th><span class="data_display_thtext">상담</span></th>
+                                                            <th><span class="data_display_thtext">완료</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3"><span class="data_display_tdtext">~</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="data_display_item">
+                                            <div class="data_display_top_row">
+                                                <p class="data_display_title">신고 의무자</p>
+                                            </div>
+                                            <div class="data_display_main_row">
+                                                <table class="data_display_tb">
+                                                    <thead>
+                                                        <tr>
+                                                            <th><span class="data_display_thtext">알림</span></th>
+                                                            <th><span class="data_display_thtext">상담</span></th>
+                                                            <th><span class="data_display_thtext">완료</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3"><span class="data_display_tdtext">~</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="data_display_tdtext">112</span></td>
+                                                            <td><span class="data_display_tdtext">97</span></td>
+                                                            <td><span class="data_display_tdtext">89</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                rockMenu("#nav_stats, #left_stats");
+            });
+
+            $(function() {
+                datePickerCall(
+                    "#date_start,#date_end",
+                    {
+                        singleDatePicker: true,
+                        autoUpdateInput: true,
+                        elseMent: "날짜 설정",
+                        locale: {
+                            format: 'YYYY-MM-DD',
+                            "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+                            "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                            applyLabel: "적용"
+                        }
+                    }
+                )
+			});
+        </script>
+    </div>
+</body>
+</html>
