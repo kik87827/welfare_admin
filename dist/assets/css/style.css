@@ -3940,6 +3940,10 @@ input.cform_input:focus {
 .board_each_box_wrap.type2 {
   gap: 0;
 }
+.board_each_box_wrap.gap_type2 {
+  gap: 24px;
+}
+
 .board_each_box {
   flex: 1;
   background: #fff;
@@ -3947,6 +3951,7 @@ input.cform_input:focus {
   padding: 16px;
   box-sizing: border-box;
   min-height: 78px;
+  position: relative;
 }
 .board_each_box.type2 {
   display: flex;
@@ -3989,6 +3994,20 @@ input.cform_input:focus {
 }
 .board_label.vhidden {
   visibility: hidden;
+}
+
+.board_else_text_layer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  justify-content: center;
+  font-size: 18px;
+  color: #0CA99F;
+  text-align: center;
+  height: 100%;
+  width: 24px;
 }
 
 .board_form_row select.board_select,
@@ -5323,6 +5342,109 @@ input.input_form_field {
   border-radius: 12px;
   padding: 16px;
   background: #fff;
+}
+
+.chart_render_box_wrap {
+  display: flex;
+  gap: 16px;
+}
+
+.chart_render_box {
+  flex: 1;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.chart_render_label {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #208A83;
+}
+
+.chart_guide_item_wrap {
+  margin: 20px 20px 0;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chart_guide_item {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.chart_guide_flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.chart_guide_text {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 700;
+  padding-top: 1px;
+}
+
+.data_display_container {
+  display: flex;
+  gap: 20px;
+}
+
+.data_display_item {
+  flex: 1;
+}
+
+.data_display_top_row {
+  padding: 20px;
+  border-top: 1px solid #DDDDDD;
+  text-align: center;
+}
+
+.data_display_title {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.data_display_tb {
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+}
+.data_display_tb th, .data_display_tb td {
+  border-top: 1px solid #DDDDDD;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+.data_display_tb th:last-of-type, .data_display_tb td:last-of-type {
+  border-right: 0;
+}
+.data_display_tb th {
+  padding: 20px 10px;
+  border-bottom: 2px solid #047A73;
+}
+.data_display_tb td {
+  padding: 10px 10px;
+}
+
+.data_display_thtext,
+.data_display_tdtext {
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.data_display_thtext {
+  color: #333;
+}
+
+.data_display_tdtext {
+  color: #999999;
 }
 
 .page_wrap.guide {
