@@ -691,8 +691,8 @@ input.input_form_field{border:0;font-size:18px;padding:0 16px;height:54px;appear
 .chart_render_container{}
 .chart_render_box_wrap{display:flex;gap:16px;}
 .chart_render_box{flex:1;padding:16px;border-radius:8px;border:1px solid #eee;}
-.chart_render_label{text-align: center;margin-top:20px;font-size:20px;font-weight:700;color:$primary;}
-.chart_render{}
+.chart_render_label{text-align: center;font-size:20px;font-weight:700;color:$primary;}
+.chart_canvas{display:block;min-height:180px;width:100%;height:100%;}
 
 .chart_guide_item_wrap{margin:20px 20px 0;display:flex;gap:20px;text-align: center;justify-content: center;flex-wrap:wrap;}
 .chart_guide_item{display:inline-flex;gap:8px;}

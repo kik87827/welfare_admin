@@ -5358,10 +5358,16 @@ input.input_form_field {
 
 .chart_render_label {
   text-align: center;
-  margin-top: 20px;
   font-size: 20px;
   font-weight: 700;
   color: #208A83;
+}
+
+.chart_canvas {
+  display: block;
+  min-height: 180px;
+  width: 100%;
+  height: 100%;
 }
 
 .chart_guide_item_wrap {

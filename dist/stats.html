@@ -14,6 +14,7 @@
 	<script src="./assets/js/dynamicListener.min.js"></script>
 	<script src="./assets/js/jquery-ui.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<script src="./assets/js/main.js"></script>
 	<title>복지위기 알림서비스 관리시스템</title>
@@ -227,41 +228,31 @@
 										<div class="chart_render_box_wrap">
 											<div class="chart_render_box">
 												<div class="chart_render">
-													<div style="display:flex; min-height:180px; height:100%; box-sizing: border-box; align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
-														chart 영역
-													</div>
+													<canvas class="chart_canvas" width="100%" height="100%" id="chart_canvas_01"></canvas>
 												</div>
 												<p class="chart_render_label">경제적인 문제</p>
 											</div>
 											<div class="chart_render_box">
 												<div class="chart_render">
-													<div style="display:flex; min-height:180px; height:100%; box-sizing: border-box; align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
-														chart 영역
-													</div>
+													<canvas class="chart_canvas" width="100%" height="100%" id="chart_canvas_02"></canvas>
 												</div>
 												<p class="chart_render_label">건강 문제 (질병)</p>
 											</div>
 											<div class="chart_render_box">
 												<div class="chart_render">
-													<div style="display:flex; min-height:180px; height:100%; box-sizing: border-box; align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
-														chart 영역
-													</div>
+													<canvas class="chart_canvas" width="100%" height="100%" id="chart_canvas_03"></canvas>
 												</div>
 												<p class="chart_render_label">정신적 문제</p>
 											</div>
 											<div class="chart_render_box">
 												<div class="chart_render">
-													<div style="display:flex; min-height:180px; height:100%; box-sizing: border-box; align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
-														chart 영역
-													</div>
+													<canvas class="chart_canvas" width="100%" height="100%" id="chart_canvas_04"></canvas>
 												</div>
 												<p class="chart_render_label">출산, 육아 문제</p>
 											</div>
 											<div class="chart_render_box">
 												<div class="chart_render">
-													<div style="display:flex; min-height:180px; height:100%; box-sizing: border-box; align-items: center; justify-content: center; padding:20px;text-align: center;background:#ddd;">
-														chart 영역
-													</div>
+													<canvas class="chart_canvas" width="100%" height="100%" id="chart_canvas_05"></canvas>
 												</div>
 												<p class="chart_render_label">기타</p>
 											</div>
@@ -440,6 +431,7 @@
 		<script>
 			window.addEventListener("DOMContentLoaded", () => {
 				rockMenu("#nav_stats, #left_stats");
+				basicChart();
 			});
 
 			$(function() {
@@ -457,6 +449,71 @@
 					}
 				)
 			});
+
+			/* chart */
+			function basicChart() {
+				let chart_canvas = document.querySelectorAll('.chart_canvas');
+
+				let chart_canvas_01 = new Chart("chart_canvas_01", {
+					type: 'bar',
+					data: {
+						labels: ['', '', ''],
+						datasets: [{
+							label: 'Dataset',
+							backgroundColor: ['#0CA99F', '#FEB700', '#F65742'],
+							data: [52, 24, 15],
+						}]
+					}
+				});
+
+				let chart_canvas_02 = new Chart("chart_canvas_02", {
+					type: 'bar',
+					data: {
+						labels: ['', '', ''],
+						datasets: [{
+							label: 'Dataset',
+							backgroundColor: ['#0CA99F', '#FEB700', '#F65742'],
+							data: [52, 24, 15],
+						}]
+					}
+				});
+
+				let chart_canvas_03 = new Chart("chart_canvas_03", {
+					type: 'bar',
+					data: {
+						labels: ['', '', ''],
+						datasets: [{
+							label: 'Dataset',
+							backgroundColor: ['#0CA99F', '#FEB700', '#F65742'],
+							data: [52, 24, 15],
+						}]
+					}
+				});
+
+				let chart_canvas_04 = new Chart("chart_canvas_04", {
+					type: 'bar',
+					data: {
+						labels: ['', '', ''],
+						datasets: [{
+							label: 'Dataset',
+							backgroundColor: ['#0CA99F', '#FEB700', '#F65742'],
+							data: [52, 24, 15],
+						}]
+					}
+				});
+
+				let chart_canvas_05 = new Chart("chart_canvas_05", {
+					type: 'bar',
+					data: {
+						labels: ['', '', ''],
+						datasets: [{
+							label: 'Dataset',
+							backgroundColor: ['#0CA99F', '#FEB700', '#F65742'],
+							data: [52, 24, 15],
+						}]
+					}
+				});
+			}
 		</script>
 	</div>
 </body>
