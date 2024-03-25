@@ -90,6 +90,10 @@ window.addEventListener("DOMContentLoaded", () => {
       itemMenu.forEach((item)=>{
         if(item.closest(".sub_left_menu_list")){
           let eventTarget = item.querySelector(".left_menu_one");
+          if(item.closest(".left_menu_two_list")){
+            item.classList.add("active");
+            return;
+          }
           let eventObj = new Event("click");
           eventTarget.dispatchEvent(eventObj);
         }

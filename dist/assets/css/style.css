@@ -663,8 +663,17 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .left_menu_two_list > li {
   margin-bottom: 16px;
 }
+.left_menu_two_list > li.active .left_menu_two .left_menu_two_text {
+  color: #047A73;
+  font-weight: 600;
+}
 .left_menu_two_list > li:last-of-type {
   margin-bottom: 0;
+}
+
+.left_menu_two:hover .left_menu_two_text {
+  color: #047A73;
+  font-weight: 600;
 }
 
 .left_menu_two_text {
